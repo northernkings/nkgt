@@ -1,21 +1,66 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div id="app" class="app">
+    <Header />
+    <Main />
+  </div>
 </template>
 
+<script>
+  import Header from './components/Header.vue';
+  import Main from './components/Main.vue';
+
+  export default {
+    name: 'App',
+    components: {
+      Header,
+      Main,
+    },
+  };
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @font-face {
+    font-family: 'Romance Fatal';
+    src: url('/assets/romance-fatal.woff2') format('woff2'),
+      url('/assets/romance-fatal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:visited,
+  a:active {
+    color: #960000 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Romance Fatal', 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+  }
 </style>
