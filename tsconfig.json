@@ -1,17 +1,28 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "module": "ES2020",
-    "moduleResolution": "Node",
-    "target": "ES2017",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client"],
-    "skipLibCheck": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "sourceMap": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "declaration": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmitOnError": true,
+    "jsx": "preserve",
+    "outDir": "./dist",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["vite/client", "@types/node"],
+    "isolatedModules": true,
     "baseUrl": "./",
     "paths": {
       "~/*": ["src/*"]
-    },
+    }
   },
   "ts-node": {
     "transpileOnly": true,
