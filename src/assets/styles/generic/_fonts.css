@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'RomanceFatal';
+  src: url('../../fonts/RomanceFatal.woff2') format('woff2'),
+    url('../../fonts/RomanceFatal.woff') format('woff');
+  font-weight: normal;
+  font-display: fallback;
+}

@@ -1,0 +1,19 @@
+.l-flow {
+  > * + * {
+    margin-top: var(--space-y-4);
+
+    @media (--mq-md) {
+      margin-top: var(--space-y-6);
+    }
+  }
+}
+
+.l-flow-slim {
+  > * + * {
+    margin-top: var(--space-y-2);
+
+    @media (--mq-md) {
+      margin-top: var(--space-y-4);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+/* Document */
+
+html {
+  -webkit-tap-highlight-color: color-mod(var(--color-black) alpha(0%));
+  background-color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  height: -webkit-fill-available;
+  height: 100dvh;
+
+  @media (--mq-xxxl) {
+    font-size: 150%;
+  }
+}
+
+body {
+  background-color: var(--color-white);
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100dvh;
+}

@@ -2,9 +2,8 @@ import { createSSRApp, defineComponent, h } from 'vue';
 import LayoutBase from '../layouts/LayoutBase';
 import type { PageContext } from './types';
 
-// helpers
-import '~/utils/scrollbarWidthVarSetter';
-import 'focus-visible';
+// style resources
+import '~/assets/styles/index.css';
 
 export const createApp = (pageContext: PageContext, siteData: any) => {
   const { Page, pageProps } = pageContext;

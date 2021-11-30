@@ -4,6 +4,7 @@ import { createApp } from './app';
 import type { PageContext } from './types';
 import type { PageContextBuiltIn } from 'vite-plugin-ssr/types';
 import { getSiteData } from '~/data/site';
+import faviconUrl from '~/assets/images/favicon.svg?url';
 
 // See https://vite-plugin-ssr.com/data-fetching
 export const passToClient = ['pageProps', 'urlPathname'];
@@ -23,13 +24,10 @@ export const render = async (pageContext: PageContextBuiltIn & PageContext) => {
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
+        <link rel="icon" href="${faviconUrl.toString()}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="${desc}" />
         <title>${title}</title>
-
-        <link id="preload-fonts">
-        <link id="inline-css">
-
       </head>
       <body>
         <div class="l-page" id="page">${dangerouslySkipEscape(appHtml)}</div>
