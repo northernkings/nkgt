@@ -1,12 +1,16 @@
 <template>
-  <h1>Welcome</h1>
-  This page is:
-  <ul>
-    <li>Rendered to HTML.</li>
-    <li>Interactive. <Counter /></li>
-  </ul>
+  <Section
+    title="A premium Kings of War tournament celebrating the best of the hobby."
+    lead-section
+    :variants="['padded-lg']"
+  >
+    <Button href="/" :variants="['lg', 'decorative', 'invert']">
+      Book your place
+    </Button>
+  </Section>
 </template>
 
 <script lang="ts" setup>
-  import Counter from '~/components/Counter';
+  import Section from '~/components/Section';
+  import Button from '~/components/Button';
 </script>
