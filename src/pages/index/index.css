@@ -1,0 +1,36 @@
+@import '~/assets/styles/resources.css';
+
+.c-media-collage {
+  display: flex;
+  align-items: center;
+  gap: var(--space-x-4);
+
+  @media (--mq-md) {
+    gap: var(--space-x-8);
+    /* width: calc(50vw - calc(var(--space-x-1) * 28)); */
+  }
+}
+
+.c-media-collage__section-1 {
+  flex-basis: 40%;
+}
+
+.c-media-collage__section-2 {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-x-4);
+
+  @media (--mq-md) {
+    gap: var(--space-x-8);
+  }
+
+  img:nth-child(1) {
+    width: 75%;
+  }
+
+  img:nth-child(2) {
+    width: 100%;
+  }
+}

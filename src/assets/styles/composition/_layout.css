@@ -18,3 +18,25 @@
 .l-footer {
   flex-shrink: 0;
 }
+
+.l-container {
+  padding-left: var(--space-x-6);
+  padding-right: var(--space-x-6);
+  max-width: var(--fluid-max-width);
+  /* min-width: var(--fluid-min-width); */
+  margin: 0 auto;
+
+  @media (--mq-md) {
+    padding-left: var(--space-x-8);
+    padding-right: var(--space-x-8);
+  }
+
+  @media (--mq-md) {
+    padding-left: var(--space-x-12);
+    padding-right: var(--space-x-12);
+  }
+
+  @media (--mq-xl) {
+    padding: 0;
+  }
+}

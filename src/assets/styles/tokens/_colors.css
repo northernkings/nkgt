@@ -3,23 +3,14 @@
 :root {
   /* Brand */
 
-  --color-brand-sinbad: #a2d8d5;
-  --color-brand-sinbad-rgb: 162, 216, 213;
+  --color-brand-mondo: #483d2f;
+  --color-brand-mondo-rgb: 72, 61, 47;
 
-  --color-brand-manhattan: #f5ab8a;
-  --color-brand-manhattan-rgb: #a2d8d5;
+  --color-brand-fuscous: #535251;
+  --color-brand-fuscous-rgb: 83, 82, 81;
 
-  --color-brand-acapulco: #88bc95;
-  --color-brand-acapulco-rgb: 136, 188, 149;
-
-  --color-brand-goldensand: #f2cd7d;
-  --color-brand-goldensand-rgb: 242, 205, 125;
-
-  --color-brand-danube: #76aad8;
-  --color-brand-danube-rgb: 118, 170, 216;
-
-  --color-brand-abbey: #525254;
-  --color-brand-abbey-rgb: 82, 82, 84;
+  --color-brand-westar: #E6E5E3;
+  --color-brand-westar-rgb: 230, 229, 227;
 
   /* Neutrals */
 

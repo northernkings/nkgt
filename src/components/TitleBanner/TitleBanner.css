@@ -1,0 +1,20 @@
+@import '~/assets/styles/resources.css';
+
+.c-title-banner {
+  padding: var(--space-y-7) var(--space-x-6);
+
+  @media (--mq-md) {
+    padding: var(--space-y-8) var(--space-x-8);
+  }
+
+  @media (--mq-md) {
+    padding: var(--space-y-12) var(--space-x-12);
+  }
+}
+
+.c-title-banner__title {
+  color: var(--color-brand-mondo);
+  text-align: center;
+  max-width: 35ch;
+  margin: 0 auto;
+}

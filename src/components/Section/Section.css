@@ -1,36 +1,37 @@
 @import '~/assets/styles/resources.css';
 
 .c-section {
+}
 
-  &--padded {
-    padding: var(--space-y-5) var(--space-x-5);
+.c-section--padded {
+  padding: var(--space-y-5) var(--space-x-5);
+}
+
+.c-section--padded-lg {
+  padding: var(--space-y-8) var(--space-x-8);
+
+  @media (--mq-md) {
+    padding: var(--space-y-12) var(--space-x-12);
   }
+}
 
-  &--padded-lg {
-    padding: var(--space-y-8) var(--space-x-8);
+.c-section__header {
+  text-align: center;
+  max-width: 100ch;
+  margin: 0 auto;
+}
 
-    @media (--mq-md) {
-      padding: var(--space-y-12) var(--space-x-12);
-    }
-  }
+.c-section__title {
+  color: var(--color-brand-mondo);
+}
 
-  &__header {
-    text-align: center;
-    max-width: 100ch;
-    margin: 0 auto;
+.c-section__action {
+  font-family: var(--font-sans-serif);
+  text-align: center;
+}
 
-    /* @media (--mq-lg) {
-      margin-bottom: var(--space-y-5);
-    } */
-  }
-
-  &__title {
-    /* margin: 0 0 var(--space-y-2); */
-    color: var(--color-black);
-  }
-
-  &__action {
-    font-family: var(--font-sans-serif);
-    text-align: center;
-  }
+.c-section__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-y-8);
 }

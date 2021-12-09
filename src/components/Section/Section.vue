@@ -1,5 +1,5 @@
 <template>
-  <component :is="htmlTag" :class="['c-section', modifierClasses]">
+  <component :is="htmlTag" :class="['c-section', variantClasses]">
     <header v-if="title" class="c-section__header o-container">
       <component
         :is="leadSection ? 'h1' : 'h2'"
@@ -11,13 +11,8 @@
     <div class="c-section__inner l-container">
       <slot />
     </div>
-    <footer class="c-section__action" v-if="action">
-      <a
-        :href="action.link"
-        class="c-section__action__link u-text-bold u-link-effect"
-      >
-        {{ action.label }}
-      </a>
+    <footer class="c-section__footer" v-if="hasSlot('footer')">
+      <slot name="footer" />
     </footer>
   </component>
 </template>
@@ -25,7 +20,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { defineComponent, PropType } from 'vue';
-  import { Section, SectionAction } from './Section.types';
+  import { SectionProps } from './Section.types';
 
   export default defineComponent({
     name: 'Section',
@@ -33,15 +28,8 @@
       title: {
         type: String,
       },
-      action: {
-        type: Object as PropType<SectionAction>,
-      },
       variants: {
         type: Array as PropType<Array<string>>,
-      },
-      flow: {
-        type: Boolean,
-        default: false,
       },
       as: {
         type: String,
@@ -50,15 +38,18 @@
         type: Boolean,
       },
     },
-    computed: {
-      modifierClasses: ({ variants }: Section): string => {
-        return classNames(
-          variants && variants.map((variant: string) => `c-section--${variant}`)
-        );
-      },
-      htmlTag: ({ as, title, showTitle }: Section): string => {
-        return as || (title && showTitle ? `section` : `div`);
-      },
+    setup(props: SectionProps, { slots }) {
+      const hasSlot = (name: string) => !!slots[name];
+      const htmlTag = props.as || (props.title ? `section` : `div`);
+      const variantClasses = classNames(
+        props.variants?.map((variant: string) => `c-section--${variant}`)
+      );
+      return {
+        ...props,
+        hasSlot,
+        htmlTag,
+        variantClasses,
+      };
     },
   });
 </script>

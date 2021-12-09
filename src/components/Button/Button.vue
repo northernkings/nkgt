@@ -1,7 +1,7 @@
 <template>
   <component
     :is="htmlTag"
-    :type="!href && type"
+    :type="!href && type ? type : undefined"
     :class="['c-button', variantClasses]"
     :href="href"
   >

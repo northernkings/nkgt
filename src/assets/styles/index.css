@@ -1,6 +1,5 @@
 /* Settings */
-@import './settings';
-@import './tools';
+@import './resources';
 @import './generic';
 @import './elements';
 @import './composition';
