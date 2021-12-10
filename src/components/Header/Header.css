@@ -177,6 +177,20 @@
   }
 }
 
+.c-header__kow {
+  height: 25px;
+  width: auto;
+  margin: 0 auto var(--space-y-1);
+}
+
+.c-header__cok {
+  height: 28px;
+  width: auto;
+  margin: 0 auto var(--space-y-2);
+  fill: var(--color-white);
+  display: block;
+}
+
 .c-header__date {
   margin-top: var(--space-x-5);
   font-family: var(--font-family-heading);
@@ -193,18 +207,6 @@
   span {
     display: inline-block;
   }
-}
-
-.c-header__kow {
-  height: 25px;
-  width: auto;
-  margin: 0 auto var(--space-y-1);
-}
-
-.c-header__cok {
-  height: 36px;
-  width: auto;
-  margin: 0 auto var(--space-y-1);
 }
 
 .c-header__book-now {

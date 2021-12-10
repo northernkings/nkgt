@@ -1,6 +1,6 @@
 <template>
   <TitleBanner
-    title="A premium Kings of War tournament celebrating the best of the hobby"
+    title="A Kings of War tournament celebrating the very best of the hobby"
   />
   <EditorialSection title="Devastation, carnage and slaughter await">
     <p>
@@ -8,14 +8,14 @@
       them up in t'north for dice rolling and social antics.
     </p>
     <p>
-      The Northern Kings GT is a five game, 2300 point of Kings of War event,
-      held over two days (14th and 15th May 2022) at The Holy Trinity Parish
-      Hall in Rothwell, Leeds. Tickets are priced at &pound;40.00 and include
-      lunch on both days.
+      The Northern Kings GT is a five game, 2300 point Kings of War event, held
+      over two days (14th and 15th May 2022) at The Holy Trinity Parish Hall in
+      Rothwell, Leeds. Tickets are priced at &pound;40.00 and include lunch on
+      both days.
     </p>
     <p>
-      There are awards for top three 'Overall' players (battle, hobby and sports
-      combined), Best General, Best Army, Player’s Choice, Most Sporting.
+      There are awards for top three 'Overall' players (Battle and Hobby
+      combined), Best General, Best Army, Player's Choice, Most Sporting.
     </p>
     <Button href="/" :variants="['decorative', 'invert']">
       Book your place
@@ -24,19 +24,19 @@
       <div class="c-media-collage">
         <div class="c-media-collage__section-1">
           <img
-            src="../../assets/images/content/in-game-2--600x800.jpg"
+            src="/images/in-game-2--600x800.jpg"
             alt=""
             loading="lazy"
           />
         </div>
         <div class="c-media-collage__section-2">
           <img
-            src="../../assets/images/content/in-game-4--800x600.jpg"
+            src="/images/in-game-4--800x600.jpg"
             alt=""
             loading="lazy"
           />
           <img
-            src="../../assets/images/content/in-game-1--800x800.jpg"
+            src="/images/in-game-1--800x800.jpg"
             alt=""
             loading="lazy"
           />

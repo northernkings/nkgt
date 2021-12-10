@@ -13,12 +13,13 @@
         Rothwell, Leeds. <span>May 14th and 15th</span>
       </p>
       <p class="c-header__strapline u-text-uppercase">
-        <img
+        <!-- <img
           class="c-header__cok"
           src="../../assets/images/cok-logo.png"
           alt="Clash of Kings"
-        />
-        UK Regional Qualifier
+        /> -->
+        <UkCokLogo class="c-header__cok" />
+        Regional Qualifier
       </p>
     </div>
     <div class="c-header__book-now">
@@ -44,6 +45,7 @@
   import { defineComponent } from 'vue';
   import GtLogo from '~/assets/images/nkgt-2022-logo.svg?component';
   import NorthernKingsLogo from '~/assets/images/nk-logo-vertical.svg?component';
+  import UkCokLogo from '~/assets/images/uk-cok-logo.svg?component';
   import Button from '~/components/Button';
 
   export default defineComponent({
@@ -51,6 +53,7 @@
       GtLogo,
       NorthernKingsLogo,
       Button,
+      UkCokLogo,
     },
   });
 </script>

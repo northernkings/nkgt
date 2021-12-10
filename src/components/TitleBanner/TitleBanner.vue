@@ -3,16 +3,21 @@
     <component :is="as || 'h1'" class="c-title-banner__title u-text-headline">
       {{ title }}
     </component>
+    <Separator class="c-title-banner__separator" />
   </div>
 </template>
 
 <script lang="ts">
   import classNames from 'classnames';
   import { defineComponent, PropType } from 'vue';
+  import Separator from '~/assets/images/separator.svg?component';
   import { TitleBannerProps } from './TitleBanner.types';
 
   export default defineComponent({
     name: 'TitleBanner',
+    components: {
+      Separator,
+    },
     props: {
       title: {
         type: String,
