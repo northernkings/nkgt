@@ -746,7 +746,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cac@npm:^6.7.11":
+"cac@npm:^6.7.12":
   version: 6.7.12
   resolution: "cac@npm:6.7.12"
   checksum: c0d4129eb30fc43449e9078ac37bb3b837aab6261236a6642a6fb9d839bb6a41e191e1f2776f87569535db07dcbf4937680419126215b4c17c9dba4351d1bd5e
@@ -2470,10 +2470,10 @@ __metadata:
     rimraf: ^3.0.2
     serve: ^13.0.2
     ts-node: ^10.4.0
-    typescript: ^4.5.2
+    typescript: ^4.5.3
     vite: 2.7.1
-    vite-plugin-ssr: ^0.3.34
-    vite-svg-loader: ^3.1.0
+    vite-plugin-ssr: ^0.3.35
+    vite-svg-loader: ^3.1.1
     vue: ^3.2.20
   languageName: unknown
   linkType: soft
@@ -3522,23 +3522,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.5.2":
-  version: 4.5.2
-  resolution: "typescript@npm:4.5.2"
+"typescript@npm:^4.5.3":
+  version: 4.5.3
+  resolution: "typescript@npm:4.5.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 74f9ce65d532bdf5d0214b3f60cf37992180023388c87a11ee6f838a803067ef0b63c600fa501b0deb07f989257dce1e244c9635ed79feca40bbccf6e0aa1ebc
+  checksum: 2ac278c20418882816789ad94a5d9e7f11969db7a2a23fa09e61f2fedf3814265cbd4f89d7f5b6e1f0e7be2b5f169becf5dab913d0da255b073ea3c8c324e6d4
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.5.2#~builtin<compat/typescript>":
-  version: 4.5.2
-  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"
+"typescript@patch:typescript@^4.5.3#~builtin<compat/typescript>":
+  version: 4.5.3
+  resolution: "typescript@patch:typescript@npm%3A4.5.3#~builtin<compat/typescript>::version=4.5.3&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 53838d56aba6fcc947d63aa0771e5d966b1b648fddafed6e221d7f38c71219c4e036ece8cfe9e35ed80cf5a35ff4eb958934c993f99c3233773ec4f9ccd53f69
+  checksum: 3c3a664dfb66e7c45d3823cc1a4038dc506415041f39249ed3af1799a64b3065448549d9e9ba509c94335d1e2dfbe311a4b9e36574e87d248f9381d541cb8626
   languageName: node
   linkType: hard
 
@@ -3621,13 +3621,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-ssr@npm:^0.3.34":
-  version: 0.3.34
-  resolution: "vite-plugin-ssr@npm:0.3.34"
+"vite-plugin-ssr@npm:^0.3.35":
+  version: 0.3.35
+  resolution: "vite-plugin-ssr@npm:0.3.35"
   dependencies:
     "@brillout/json-s": ^0.3.0
     "@brillout/libassert": ^0.5.2
-    cac: ^6.7.11
+    cac: ^6.7.12
     es-module-lexer: ^0.9.3
     fast-glob: ^3.2.7
     kolorist: ^1.5.0
@@ -3637,17 +3637,17 @@ __metadata:
     vite: ^2.5.0
   bin:
     vite-plugin-ssr: node/bin/vite-plugin-ssr.js
-  checksum: 480e080400a5a36a6efb1f8e9ed8ffce83d99afde9088b5eddfde02b7be0b8bb55fc7c45f14bc90ed94de4db319b03e98971b8fa3fd7c6f3fb4963f27a00e2ec
+  checksum: 084e03e98d4e480224d79608ad3103a41aee1ccfa0a5743bae1b1a28b99bce4f78b38cf7c21ba888e5510f810f26f744256163a7c144d8a662a7a1eaf7d6fd80
   languageName: node
   linkType: hard
 
-"vite-svg-loader@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "vite-svg-loader@npm:3.1.0"
+"vite-svg-loader@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "vite-svg-loader@npm:3.1.1"
   dependencies:
     "@vue/compiler-sfc": ^3.2.20
     svgo: ^2.7.0
-  checksum: 697f954831fde75fe88e1da965c68df6c09a106fc76ed25f2d6d3b942d6934afd57e98e028270888d26edddf0090a7384c8d8ab907fd140d480def9c24f106bc
+  checksum: ca875cbf59a1aee52ea6e5be222ca6b206540a36d5e0b803dce0ae55b2b505ad3fdd40c716adf857cf8464913dbee314b862ecbfede9de29e48bc4312ddfce38
   languageName: node
   linkType: hard
 

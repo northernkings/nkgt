@@ -1,0 +1,7 @@
+{
+  "cssEnvVarsAutocomplete.varFiles": [
+    "src/assets/styles/tokens/_colors.css",
+    "src/assets/styles/tokens/_space.css",
+    "src/assets/styles/tokens/_text.css"
+  ]
+}
