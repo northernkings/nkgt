@@ -7,7 +7,6 @@
   background-color: var(--color-black);
   background-image: url('~/assets/images/header-bg--sm.jpg');
   background-size: cover;
-  background-attachment: fixed;
   background-position: 50% 75%;
   color: var(--color-white);
   height: 90vh;
@@ -19,6 +18,7 @@
   @media (--mq-md) {
     min-height: 768px;
     background-image: url('~/assets/images/header-bg--lg.jpg');
+    background-attachment: fixed;
   }
 
   &::before {

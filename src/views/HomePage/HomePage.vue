@@ -225,4 +225,4 @@
   });
 </script>
 
-<style src="./index.css"></style>
+<style src="./HomePage.css"></style>

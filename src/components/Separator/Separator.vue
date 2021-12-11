@@ -16,6 +16,8 @@
 </script>
 
 <style lang="postcss">
+  @import '~/assets/styles/resources.css';
+  
   .c-separator {
     padding-top: var(--space-y-7);
     padding-bottom: var(--space-y-7);

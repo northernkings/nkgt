@@ -1,22 +1,22 @@
 import { renderToString } from '@vue/server-renderer';
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr';
 import { createApp } from './app';
-import type { PageContext } from './types';
+import type { DocumentProps, PageContext } from './types';
 import type { PageContextBuiltIn } from 'vite-plugin-ssr/types';
-import { getSiteData } from '~/data/site';
+import { siteData } from '~/data/site';
+import { processMeta } from '~/utils/processMeta';
 
 // See https://vite-plugin-ssr.com/data-fetching
 export const passToClient = ['pageProps', 'urlPathname'];
 
 export const render = async (pageContext: PageContextBuiltIn & PageContext) => {
-  const siteData = await getSiteData;
   const app = createApp(pageContext, siteData);
   const appHtml = await renderToString(app);
 
   // See https://vite-plugin-ssr.com/html-head
-  const { documentProps } = pageContext;
-  const title = (documentProps && documentProps.title) || siteData.title;
-  const desc = (documentProps && documentProps.description) || '';
+  const documentProps = pageContext.pageExports.documentProps as DocumentProps;
+  const title = documentProps?.title || siteData.title;
+  const meta = processMeta(documentProps?.meta);
 
   const documentHtml: any = escapeInject`
     <!DOCTYPE html>
@@ -25,8 +25,8 @@ export const render = async (pageContext: PageContextBuiltIn & PageContext) => {
         <meta charset="UTF-8" />
         <link rel="icon" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="${desc}" />
         <title>${title}</title>
+        ${dangerouslySkipEscape(meta)}
       </head>
       <body>
         <div class="l-page" id="page">${dangerouslySkipEscape(appHtml)}</div>

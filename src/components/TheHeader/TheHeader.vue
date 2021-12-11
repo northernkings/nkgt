@@ -13,11 +13,6 @@
         Rothwell, Leeds. <span>May 14th and 15th</span>
       </p>
       <p class="c-header__strapline u-text-uppercase">
-        <!-- <img
-          class="c-header__cok"
-          src="../../assets/images/cok-logo.png"
-          alt="Clash of Kings"
-        /> -->
         <UkCokLogo class="c-header__cok" />
         Regional Qualifier
       </p>
