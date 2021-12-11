@@ -5,14 +5,14 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: var(--space-y-7) var(--space-x-6);
+  padding: var(--space-y-7) var(--space-x-6) 0;
 
   @media (--mq-md) {
-    padding: var(--space-y-8) var(--space-x-8);
+    padding: var(--space-y-8) var(--space-x-8) 0;
   }
 
   @media (--mq-lg) {
-    padding: var(--space-y-12) var(--space-x-12);
+    padding: var(--space-y-12) var(--space-x-12) 0;
   }
 }
 
@@ -24,7 +24,7 @@
 .c-title-banner__separator {
   width: 30px;
   padding-top: var(--space-x-7);
-  fill: var(--color-brand-mondo);
+  fill: var(--color-black);
 
   @media (--mq-md) {
     padding-top: var(--space-y-12);

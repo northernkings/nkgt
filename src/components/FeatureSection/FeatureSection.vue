@@ -1,18 +1,20 @@
 <template>
-  <component :is="htmlTag" :class="['c-editorial-section', variantClasses]">
-    <div class="c-editorial-section__inner l-container">
-      <div class="c-editorial-section__content">
-        <header v-if="title" class="c-editorial-section__header o-container">
-          <h2 class="c-editorial-section__title u-text-uppercase">
+  <component :is="htmlTag" :class="['c-feature-section', variantClasses]">
+    <div class="c-feature-section__inner l-container">
+      <div class="c-feature-section__content">
+        <header v-if="title" class="c-feature-section__header o-container">
+          <h2 class="c-feature-section__title u-text-uppercase">
             {{ title }}
           </h2>
         </header>
-        <div class="c-editorial-section__body l-flow">
+        <div class="c-feature-section__body l-flow">
           <slot />
         </div>
       </div>
-      <div class="c-editorial-section__media">
-        <slot name="media" />
+      <div class="c-feature-section__media">
+        <div class="c-feature-section__media__inner">
+          <slot name="media" />
+        </div>
       </div>
     </div>
   </component>
@@ -21,7 +23,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { defineComponent, PropType } from 'vue';
-  import type { EditorialSectionProps } from './EditorialSection.types';
+  import type { FeatureSectionProps } from './FeatureSection.types';
 
   export default defineComponent({
     name: 'EditorialSection',
@@ -36,12 +38,12 @@
         type: String,
       },
     },
-    setup(props: EditorialSectionProps, { slots }) {
+    setup(props: FeatureSectionProps, { slots }) {
       const hasSlot = (name: string) => !!slots[name];
       const htmlTag = props.as || (props.title ? `section` : `div`);
       const variantClasses = classNames(
         props.variants?.map(
-          (variant: string) => `c-editorial-section--${variant}`
+          (variant: string) => `c-feature-section--${variant}`
         )
       );
       return {
@@ -54,4 +56,4 @@
   });
 </script>
 
-<style src="./EditorialSection.css"></style>
+<style src="./FeatureSection.css"></style>

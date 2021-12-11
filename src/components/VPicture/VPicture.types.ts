@@ -9,7 +9,7 @@ export interface PictureSource {
   type?: string;
 }
 
-export interface PictureProps {
+export interface VPictureProps {
   _id?: string;
   alt: string;
   backgroundColor?: string;
@@ -17,13 +17,8 @@ export interface PictureProps {
   lqip?: string;
   loading?: string;
   maintainAspectRatio?: boolean;
-  modifiers?: Array<string>;
-  sources?: Array<PictureSource>;
+  modifiers?: string[];
+  sources?: PictureSource[];
   size?: PictureSize;
   src: string;
-}
-
-export interface Picture extends PictureProps {
-  aspectRatio?: string;
-  classes: string;
 }

@@ -1,29 +1,34 @@
 <template>
   <component :is="htmlTag" :class="['c-section', variantClasses]">
-    <header v-if="title" class="c-section__header o-container">
-      <component
-        :is="leadSection ? 'h1' : 'h2'"
-        class="c-section__title u-text-headline"
-      >
-        {{ title }}
-      </component>
-    </header>
     <div class="c-section__inner l-container">
-      <slot />
+      <header v-if="title" class="c-section__header">
+        <component
+          :is="leadSection ? 'h1' : 'h2'"
+          class="c-section__title u-text-uppercase"
+        >
+          {{ title }}
+        </component>
+      </header>
+      <footer class="c-section__intro" v-if="hasSlot('intro')">
+        <slot name="intro" />
+      </footer>
+      <div class="c-section__body">
+        <slot />
+      </div>
+      <footer class="c-section__footer" v-if="hasSlot('footer')">
+        <slot name="footer" />
+      </footer>
     </div>
-    <footer class="c-section__footer" v-if="hasSlot('footer')">
-      <slot name="footer" />
-    </footer>
   </component>
 </template>
 
 <script lang="ts">
   import classNames from 'classnames';
   import { defineComponent, PropType } from 'vue';
-  import { SectionProps } from './Section.types';
+  import type { VSectionProps } from './VSection.types';
 
   export default defineComponent({
-    name: 'Section',
+    name: 'VueSection',
     props: {
       title: {
         type: String,
@@ -38,7 +43,7 @@
         type: Boolean,
       },
     },
-    setup(props: SectionProps, { slots }) {
+    setup(props: VSectionProps, { slots }) {
       const hasSlot = (name: string) => !!slots[name];
       const htmlTag = props.as || (props.title ? `section` : `div`);
       const variantClasses = classNames(
@@ -54,4 +59,4 @@
   });
 </script>
 
-<style src="./Section.css"></style>
+<style src="./VSection.css"></style>

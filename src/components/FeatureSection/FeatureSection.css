@@ -1,0 +1,117 @@
+@import '~/assets/styles/resources.css';
+
+.c-feature-section {
+  --feature-section-title-color: var(--color-brand-mondo);
+}
+
+.c-feature-section--dark {
+  --feature-section-title-color: var(--color-white);
+  --list-item-mark-color: var(--color-white);
+
+  background-color: var(--color-brand-zeus);
+  color: var(--color-white);
+}
+
+.c-feature-section--black {
+  --feature-section-title-color: var(--color-white);
+  --list-item-mark-color: var(--color-white);
+
+  background-color: var(--color-black);
+  color: var(--color-light-grey);
+}
+
+.c-feature-section--tint {
+  background-color: rgba(var(--color-brand-zeus-rgb), 0.1);
+}
+
+.c-feature-section__inner {
+  @media (--mq-lg) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--grid-gap);
+  }
+}
+
+.c-feature-section__content {
+  padding-top: var(--space-y-7);
+  padding-bottom: var(--space-y-7);
+
+  @media (--mq-md) {
+    padding-top: var(--space-y-8);
+    padding-bottom: var(--space-y-8);
+  }
+
+  @media (--mq-lg) {
+    padding-top: var(--space-y-12);
+    padding-bottom: var(--space-y-12);
+    padding-right: calc(var(--grid-gap) / 2);
+  }
+}
+
+.c-feature-section--reverse\:lg .c-feature-section__content {
+  @media (--mq-lg) {
+    order: 2;
+    padding-right: 0;
+    /* padding-left: calc(var(--grid-gap) / 2); */
+  }
+}
+
+.c-feature-section__body {
+  margin-top: var(--space-y-8);
+  max-width: 65ch;
+
+  h3,
+  h4 {
+    color: var(--color-black);
+  }
+}
+
+.c-feature-section__media {
+  overflow: visible;
+
+  @media (--mq-lg) {
+    height: 100%;
+  }
+}
+
+.c-feature-section--reverse\:lg .c-feature-section__media {
+  @media (--mq-lg) {
+    order: 1;
+  }
+}
+
+.c-feature-section__media__inner {
+  width: var(--fluid-screen);
+  margin-left: calc(50% - calc(var(--fluid-screen) / 2));
+
+  @media (--mq-lg) {
+    width: calc(var(--fluid-screen) / 2);
+    margin: 0;
+    background: yellow;
+    position: relative;
+    height: 100%;
+  }
+}
+
+.c-feature-section--reverse\:lg .c-feature-section__media__inner {
+  @media (--mq-lg) {
+    float: right;
+  }
+}
+
+.c-feature-section__media img {
+  @media (--mq-lg) {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.c-feature-section__title {
+  color: var(--feature-section-title-color);
+  max-width: 35ch;
+}

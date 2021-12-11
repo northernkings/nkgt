@@ -23,20 +23,20 @@
       </p>
     </div>
     <div class="c-header__book-now">
-      <Button
+      <VButton
         class="c-header__book-now__sm"
         href="/"
         :variants="['sm', 'decorative', 'ghost', 'invert']"
       >
-        Book your place
-      </Button>
-      <Button
+        Buy your ticket
+      </VButton>
+      <VButton
         class="c-header__book-now__lg"
         href="/"
         :variants="['lg', 'decorative', 'ghost', 'invert']"
       >
-        Book your place
-      </Button>
+        Buy your ticket
+      </VButton>
     </div>
   </header>
 </template>
@@ -46,16 +46,16 @@
   import GtLogo from '~/assets/images/nkgt-2022-logo.svg?component';
   import NorthernKingsLogo from '~/assets/images/nk-logo-vertical.svg?component';
   import UkCokLogo from '~/assets/images/uk-cok-logo.svg?component';
-  import Button from '~/components/Button';
+  import VButton from '~/components/VButton';
 
   export default defineComponent({
     components: {
       GtLogo,
       NorthernKingsLogo,
-      Button,
+      VButton,
       UkCokLogo,
     },
   });
 </script>
 
-<style src="./Header.css"></style>
+<style src="./TheHeader.css"></style>

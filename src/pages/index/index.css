@@ -7,7 +7,6 @@
 
   @media (--mq-md) {
     gap: var(--space-x-8);
-    /* width: calc(50vw - calc(var(--space-x-1) * 28)); */
   }
 }
 

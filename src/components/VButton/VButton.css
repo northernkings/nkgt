@@ -1,14 +1,14 @@
+@import '~/assets/styles/resources.css';
+
 .c-button {
-  --button-effect-speed: 0.3s;
-  --button-effect-ease: cubic-bezier(0.215, 0.61, 0.355, 1);
   --button-icon-size: 12px;
 
   @media (--mq-md) {
     --button-icon-size: 16px;
   }
 
-  /* @mixin button-reset;
-  @mixin font-smoothing; */
+  @mixin button-reset;
+  @mixin font-smoothing;
 
   /* Layout */
   box-sizing: border-box;
@@ -35,17 +35,16 @@
   text-align: center;
   line-height: calc(var(--baseline) * 6);
   white-space: nowrap;
-  text-decoration: none;
+  cursor: pointer;
 
   @media (--mq-lg) {
     line-height: calc(var(--baseline) * 7);
   }
 
   &:hover,
-  &:active {
-  }
-
   &:focus {
+    background-color: rgba(var(--color-white-rgb), 0.9);
+    border-color: transparent;
   }
 
   &__label {
@@ -54,7 +53,7 @@
 
   &__icon {
     display: flex;
-    margin-left: var(--space-x-2);
+    margin-right: var(--space-x-3);
     align-items: center;
     justify-content: center;
   }
@@ -98,11 +97,6 @@
     }
   }
 
-  &--color-a {
-    background-color: var(--color-brand-peppermint-green);
-    color: var(--color-black);
-  }
-
   &--block {
     width: 100%;
   }
@@ -117,41 +111,6 @@
     padding: var(--space-y-4) var(--space-x-8);
     font-size: var(--font-size-4);
     line-height: var(--line-height-4);
-  }
-
-  &--icon-only {
-    --button-size-icon-only: calc(var(--baseline) * 10);
-
-    width: auto;
-    min-width: 0;
-    padding: 0;
-    height: var(--button-size-icon-only);
-    width: var(--button-size-icon-only);
-  }
-
-  &--icon-only &__icon {
-    margin: 0;
-  }
-
-  &--sm&--icon-only {
-    --button-size-icon-only: calc(var(--baseline) * 6);
-    --button-icon-size: 12px;
-
-    @media (--mq-md) {
-      --button-size-icon-only: calc(var(--baseline) * 8);
-      --button-icon-size: 16px;
-    }
-  }
-
-  &--lg&--icon-only {
-    --button-size-icon-only: calc(var(--baseline) * 11);
-    --button-icon-size: 22px;
-
-    @media (--mq-md) {
-      --button-effect-speed: 0.2s;
-      --button-size-icon-only: calc(var(--baseline) * 15);
-      --button-icon-size: 28px;
-    }
   }
 
   &[disabled] {

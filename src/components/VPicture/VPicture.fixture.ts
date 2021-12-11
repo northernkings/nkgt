@@ -1,5 +1,3 @@
-import { Picture } from '../Picture.types';
-
 export default {
   alt: 'test alt',
   backgroundColor: '#000000',
@@ -23,4 +21,4 @@ export default {
     },
   ],
   src: 'test-image-0.webp',
-} as Picture;
+};

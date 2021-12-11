@@ -13,11 +13,10 @@
   import NorthernKingsLogo from '~/assets/images/nk-logo-vertical.svg?component';
 
   export default defineComponent({
-    name: 'Footer',
     components: {
       NorthernKingsLogo,
     },
   });
 </script>
 
-<style src="./Footer.css"></style>
+<style src="./TheFooter.css"></style>

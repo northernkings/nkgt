@@ -3,13 +3,16 @@
 :root {
   /* Brand */
 
-  --color-brand-mondo: #483d2f;
+  --color-brand-zeus: #2c271e;
+  --color-brand-zeus-rgb: 44, 39, 30;
+
+  --color-brand-mondo: #453f36;
   --color-brand-mondo-rgb: 72, 61, 47;
 
   --color-brand-fuscous: #535251;
   --color-brand-fuscous-rgb: 83, 82, 81;
 
-  --color-brand-westar: #E6E5E3;
+  --color-brand-westar: #e6e5e3;
   --color-brand-westar-rgb: 230, 229, 227;
 
   /* Neutrals */

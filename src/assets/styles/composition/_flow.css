@@ -1,19 +1,23 @@
-.l-flow {
-  > * + * {
-    margin-top: var(--space-y-4);
+.l-flow > * + * {
+  margin-top: var(--space-y-4);
 
-    @media (--mq-md) {
-      margin-top: var(--space-y-6);
-    }
+  @media (--mq-md) {
+    margin-top: var(--space-y-6);
   }
 }
 
-.l-flow-slim {
-  > * + * {
-    margin-top: var(--space-y-2);
+.l-flow > :is(h2, h3, h4, h5, h6) + * {
+  margin-top: var(--space-y-1);
 
-    @media (--mq-md) {
-      margin-top: var(--space-y-4);
-    }
+  @media (--mq-md) {
+    margin-top: var(--space-y-2);
+  }
+}
+
+.l-flow-slim > * + * {
+  margin-top: var(--space-y-2);
+
+  @media (--mq-md) {
+    margin-top: var(--space-y-4);
   }
 }

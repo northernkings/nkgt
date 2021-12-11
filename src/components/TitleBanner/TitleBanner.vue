@@ -11,7 +11,7 @@
   import classNames from 'classnames';
   import { defineComponent, PropType } from 'vue';
   import Separator from '~/assets/images/separator.svg?component';
-  import { TitleBannerProps } from './TitleBanner.types';
+  import type { TitleBannerProps } from './TitleBanner.types';
 
   export default defineComponent({
     name: 'TitleBanner',

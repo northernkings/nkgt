@@ -1,0 +1,28 @@
+.b-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.b-table th,
+.b-table td {
+  text-align: left;
+  padding: var(--space-x-2) var(--space-y-2);
+  border: 1px solid var(--color-mid-grey);
+  font-weight: 400;
+}
+
+.b-table thead th {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--font-family-heading);
+  text-transform: uppercase;
+}
+
+.b-table--center th,
+.b-table--center td {
+  text-align: center;
+}
+
+.b-table--zebra tr:nth-child(even) {
+  background-color: rgba(var(--color-brand-mondo-rgb), 0.05);
+}

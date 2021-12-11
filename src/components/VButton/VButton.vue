@@ -5,11 +5,11 @@
     :class="['c-button', variantClasses]"
     :href="href"
   >
-    <span class="c-button__label" v-if="hasSlot('default')">
-      <slot name="default" />
-    </span>
     <span class="c-button__icon" v-if="hasSlot('icon')">
       <slot name="icon" />
+    </span>
+    <span class="c-button__label" v-if="hasSlot('default')">
+      <slot name="default" />
     </span>
   </component>
 </template>
@@ -17,7 +17,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { defineComponent, PropType } from 'vue';
-  import { ButtonProps } from './Button.types';
+  import type { VButtonProps } from './VButton.types';
 
   export default defineComponent({
     name: 'Button',
@@ -29,13 +29,13 @@
         type: String,
       },
       variants: {
-        type: Array as PropType<ButtonProps['variants']>,
+        type: Array as PropType<VButtonProps['variants']>,
       },
       type: {
         type: String,
       },
     },
-    setup(props: ButtonProps, { slots }) {
+    setup(props: VButtonProps, { slots }) {
       const hasSlot = (name: string) => !!slots[name];
       const htmlTag = (): string => {
         if (props.as) {
@@ -59,4 +59,4 @@
   });
 </script>
 
-<style src="./Button.css"></style>
+<style src="./VButton.css"></style>

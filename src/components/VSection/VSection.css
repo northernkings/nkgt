@@ -1,0 +1,73 @@
+@import '~/assets/styles/resources.css';
+
+.c-section {
+  --section-title-color: var(--color-brand-mondo);
+}
+
+.c-section--padded {
+  padding-top: var(--space-y-7);
+  padding-bottom: var(--space-y-7);
+
+  @media (--mq-md) {
+    padding-top: var(--space-y-8);
+    padding-bottom: var(--space-y-8);
+  }
+
+  @media (--mq-lg) {
+    padding-top: var(--space-y-12);
+    padding-bottom: var(--space-y-12);
+  }
+}
+
+.c-section--dark {
+  --section-title-color: var(--color-white);
+  --list-item-mark-color: var(--color-white);
+
+  background-color: var(--color-brand-zeus);
+  color: var(--color-white);
+}
+
+.c-section--black {
+  --section-title-color: var(--color-white);
+  --list-item-mark-color: var(--color-white);
+
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.c-section--tint {
+  background-color: rgba(var(--color-brand-zeus-rgb), 0.1);
+}
+
+.c-section__header {
+}
+
+.c-section__title {
+  color: var(--section-title-color);
+  max-width: 100ch;
+}
+
+.c-section--center\:md .c-section__title {
+  @media (--mq-md) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.c-section__intro {
+  max-width: 65ch;
+  margin-top: var(--space-y-8);
+}
+
+.c-section__body {
+  margin-top: var(--space-y-8);
+}
+
+.c-section__footer {
+  margin-top: var(--space-y-8);
+  
+  @media (--mq-md) {
+    display: flex;
+    justify-content: center;
+  }
+}

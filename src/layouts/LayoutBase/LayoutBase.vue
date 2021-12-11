@@ -1,22 +1,22 @@
 <template>
   <div class="l-layout">
-    <Header />
+    <TheHeader />
     <main class="l-main">
       <slot />
     </main>
-    <Footer />
+    <TheFooter />
   </div>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import Header from '~/components/Header';
-  import Footer from '~/components/Footer';
+  import TheHeader from '~/components/TheHeader';
+  import TheFooter from '~/components/TheFooter';
 
   export default defineComponent({
     components: {
-      Header,
-      Footer,
+      TheHeader,
+      TheFooter,
     },
   });
 </script>

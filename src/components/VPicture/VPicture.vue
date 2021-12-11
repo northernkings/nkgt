@@ -35,7 +35,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { defineComponent, PropType } from 'vue';
-  import { PictureSize, Picture, PictureSource } from './Picture.types';
+  import type { PictureSize, VPictureProps, PictureSource } from './VPicture.types';
 
   export default defineComponent({
     props: {
@@ -77,7 +77,11 @@
       },
     },
     computed: {
-      classes: ({ modifiers, size, maintainAspectRatio }: Picture): string => {
+      classes: ({
+        modifiers,
+        size,
+        maintainAspectRatio,
+      }: VPictureProps): string => {
         return classNames(
           'c-picture',
           modifiers &&
@@ -91,7 +95,7 @@
       aspectRatio: ({
         size,
         maintainAspectRatio,
-      }: Picture): string | undefined => {
+      }: VPictureProps): string | undefined => {
         return maintainAspectRatio && size?.width && size?.height
           ? `${(size.height / size.width) * 100}%`
           : undefined;
@@ -100,4 +104,4 @@
   });
 </script>
 
-<style src="./Picture.css"></style>
+<style src="./VPicture.css"></style>
