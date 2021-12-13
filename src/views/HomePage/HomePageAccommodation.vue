@@ -79,14 +79,26 @@ export default defineComponent({
 }
 
 .c-accommodation__logo--ramada {
-  height: 90px;
+  height: 70px;
+
+  @media (--mq-md) {
+    height: 90px;
+  }
 }
 
 .c-accommodation__logo--holiday-inn {
-  height: 120px;
+  height: 100px;
+
+  @media (--mq-md) {
+    height: 120px;
+  }
 }
 
 .c-accommodation__logo--mews {
-  height: 110px;
+  height: 90px;
+
+  @media (--mq-md) {
+    height: 110px;
+  }
 }
 </style>

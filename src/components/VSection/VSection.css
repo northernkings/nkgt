@@ -74,6 +74,12 @@
   margin-top: var(--space-y-8);
 }
 
+.c-section--center .c-section__intro {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .c-section--center\:md .c-section__intro {
   @media (--mq-md) {
     margin-left: auto;

@@ -1,89 +1,84 @@
-.u-text {
-  &-0 {
-    font-size: var(--font-size-0);
-    line-height: var(--line-height-0);
-  }
+.u-text-0 {
+  font-size: var(--font-size-0);
+  line-height: var(--line-height-0);
+}
 
-  &-1 {
+.u-text-1 {
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-1);
+}
+
+.u-text-2 {
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-2);
+}
+
+.u-text-3 {
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+}
+
+.u-text-4 {
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-4);
+}
+
+.u-text-5 {
+  font-size: var(--font-size-5);
+  line-height: var(--line-height-5);
+}
+
+.u-text-6 {
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-6);
+}
+
+.u-text-7 {
+  font-size: var(--font-size-7);
+  line-height: var(--line-height-7);
+}
+
+.u-text-8 {
+  font-size: var(--font-size-8);
+  line-height: var(--line-height-8);
+}
+
+.u-text-bold {
+  font-weight: 700;
+}
+
+.u-text-normal {
+  font-weight: 400;
+}
+
+.u-text-light {
+  font-weight: 300;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-italic {
+  font-style: italic;
+}
+
+.u-text-decorative {
+  font-family: var(--font-family-heading);
+}
+
+.u-text-headline {
+  font-size: var(--font-size-2);
+
+  @media (--mq-md) {
     font-size: var(--font-size-1);
-    line-height: var(--line-height-1);
   }
 
-  &-2 {
-    font-size: var(--font-size-2);
-    line-height: var(--line-height-2);
-  }
-
-  &-3 {
-    font-size: var(--font-size-3);
-    line-height: var(--line-height-3);
-  }
-
-  &-4 {
-    font-size: var(--font-size-4);
-    line-height: var(--line-height-4);
-  }
-
-  &-5 {
-    font-size: var(--font-size-5);
-    line-height: var(--line-height-5);
-  }
-
-  &-6 {
-    font-size: var(--font-size-6);
-    line-height: var(--line-height-6);
-  }
-
-  &-7 {
-    font-size: var(--font-size-7);
-    line-height: var(--line-height-7);
-  }
-
-  &-8 {
-    font-size: var(--font-size-8);
-    line-height: var(--line-height-8);
-  }
-
-  &-bold {
-    font-weight: 700;
-  }
-
-  &-normal {
-    font-weight: 400;
-  }
-
-  &-light {
-    font-weight: 300;
-  }
-
-  &-uppercase {
-    text-transform: uppercase;
-  }
-
-  &-center {
-    text-align: center;
-  }
-
-  &-italic {
-    font-style: italic;
-  }
-
-  &-decorative {
-    font-family: var(--font-family-heading);
-  }
-
-  &-headline {
-    font-family: var(--font-family-heading);
-    font-size: var(--font-size-2);
-    letter-spacing: 1px;
-
-    @media (--mq-md) {
-      font-size: var(--font-size-1);
-      letter-spacing: 2px;
-    }
-
-    @media (--mq-lg) {
-      font-size: var(--font-size-0);
-    }
+  @media (--mq-lg) {
+    font-size: var(--font-size-0);
   }
 }

@@ -1,7 +1,9 @@
 <template>
-  <VSection :variants="['center:md']">
+  <VSection :variants="['center']">
     <template v-slot:intro>
-      <p class="u-text-0 u-color-black"><span class="u-text-decorative">Are you ready for battle</span>?</p>
+      <p class="u-text-headline u-color-black">
+        <span class="u-text-decorative">Are you ready for battle</span>?
+      </p>
       <VButton
         href="https://www.paypal.com/paypalme/northernkings/45"
         :variants="['lg:lg', 'decorative', 'invert']"
