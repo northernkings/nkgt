@@ -9,10 +9,10 @@
           {{ title }}
         </component>
       </header>
-      <footer class="c-section__intro" v-if="hasSlot('intro')">
+      <div class="c-section__intro l-flow" v-if="hasSlot('intro')">
         <slot name="intro" />
-      </footer>
-      <div class="c-section__body">
+      </div>
+      <div class="c-section__body l-flow">
         <slot />
       </div>
       <footer class="c-section__footer" v-if="hasSlot('footer')">

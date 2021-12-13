@@ -5,8 +5,8 @@
 }
 
 .u-color {
-  /* &-unilever-blue {
-    color: var(--color-brand-unilever-blue);
-  } */
+  &-black {
+    color: var(--color-black);
+  }
 }
 

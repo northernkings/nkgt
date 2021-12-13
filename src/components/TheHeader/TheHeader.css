@@ -168,13 +168,9 @@
 
 .c-header__strapline {
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-6);
+  font-size: var(--font-size-8);
   letter-spacing: 1px;
   margin-top: var(--space-x-10);
-
-  @media (--mq-md) {
-    font-size: var(--font-size-4);
-  }
 }
 
 .c-header__kow {
@@ -234,7 +230,7 @@
   }
 }
 
-/* 
+/*
   .c-header__scroll-animated {
     left: 50%;
     position: absolute;
@@ -282,7 +278,7 @@
       opacity: 0;
       transform: translate(0, 8px);
     }
-  } 
+  }
   */
 
 .c-header__scroll {

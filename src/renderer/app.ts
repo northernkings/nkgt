@@ -2,7 +2,7 @@ import { createSSRApp, defineComponent, h } from 'vue';
 import LayoutBase from '../layouts/LayoutBase';
 import type { PageContext } from './types';
 
-// style resources
+// global styles
 import '~/assets/styles/index.css';
 
 export const createApp = (pageContext: PageContext, siteData: any) => {

@@ -2,7 +2,7 @@
 
 :root {
   --font-sans-serif: sans-serif;
-  --font-serif: Times, serif;
+  --font-serif: "Marion", Times, serif;
   --font-monospace: monospace;
 
   --font-size-0: 66px;
@@ -18,5 +18,5 @@
   --font-size-base: var(--font-size-5);
   --font-family-base: var(--font-serif);
   --line-height-base: 1.35;
-  --font-family-heading: 'RomanceFatal', var(--font-serif);
+  --font-family-heading: "RomanceFatal", var(--font-serif);
 }

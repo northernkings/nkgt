@@ -33,6 +33,7 @@
       },
       type: {
         type: String,
+        default: 'button'
       },
     },
     setup(props: VButtonProps, { slots }) {

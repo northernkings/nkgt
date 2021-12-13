@@ -1,31 +1,31 @@
-import { siteData } from '~/data/site';
+import { siteData } from "~/data/site";
 
 export const documentProps = {
   title: siteData.title,
   meta: [
     {
-      name: 'description',
+      name: "description",
       content: siteData.description,
     },
     {
-      property: 'og:url',
+      property: "og:url",
       content: siteData.siteUrl,
     },
     {
-      property: 'og:title',
+      property: "og:title",
       content: siteData.title,
     },
-    { property: 'og:site_name', content: 'The Northern Kings GT' },
-    { property: 'og:type', content: 'website' },
+    { property: "og:site_name", content: "The Northern Kings GT" },
+    { property: "og:type", content: "website" },
     {
-      property: 'og:image',
+      property: "og:image",
       content: `${siteData.siteUrl}/nkgt2022-ograph.jpg`,
     },
     {
-      property: 'og:description',
+      property: "og:description",
       content: siteData.description,
     },
   ],
 };
 
-export { default } from '~/views/HomePage';
+export { default } from "~/views/HomePage";

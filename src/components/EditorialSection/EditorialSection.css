@@ -72,6 +72,11 @@
   padding-right: calc((100vw - var(--fluid-max-width)) / 2); */
 }
 
+.c-editorial-section__title {
+  color: var(--color-black);
+  max-width: 35ch;
+}
+
 .c-editorial-section__body {
   margin-top: var(--space-y-6);
   max-width: 65ch;
@@ -92,9 +97,4 @@
   @media (--mq-md) {
     flex: 1;
   }
-}
-
-.c-editorial-section__title {
-  color: var(--color-black);
-  max-width: 35ch;
 }

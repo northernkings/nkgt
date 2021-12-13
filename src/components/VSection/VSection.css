@@ -1,7 +1,7 @@
-@import '~/assets/styles/resources.css';
+@import "~/assets/styles/resources.css";
 
 .c-section {
-  --section-title-color: var(--color-brand-mondo);
+  --section-title-color: var(--color-black);
 }
 
 .c-section--padded {
@@ -16,6 +16,21 @@
   @media (--mq-lg) {
     padding-top: var(--space-y-12);
     padding-bottom: var(--space-y-12);
+  }
+}
+
+.c-section--spacious {
+  padding-top: var(--space-y-7);
+  padding-bottom: var(--space-y-7);
+
+  @media (--mq-md) {
+    padding-top: var(--space-y-11);
+    padding-bottom: var(--space-y-11);
+  }
+
+  @media (--mq-lg) {
+    padding-top: var(--space-y-15);
+    padding-bottom: var(--space-y-15);
   }
 }
 
@@ -55,8 +70,16 @@
 }
 
 .c-section__intro {
-  max-width: 65ch;
+  max-width: 100ch;
   margin-top: var(--space-y-8);
+}
+
+.c-section--center\:md .c-section__intro {
+  @media (--mq-md) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .c-section__body {
@@ -65,7 +88,7 @@
 
 .c-section__footer {
   margin-top: var(--space-y-8);
-  
+
   @media (--mq-md) {
     display: flex;
     justify-content: center;

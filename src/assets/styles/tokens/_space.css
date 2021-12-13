@@ -15,6 +15,9 @@
   --space-y-10: calc(10 * var(--baseline));
   --space-y-11: calc(11 * var(--baseline));
   --space-y-12: calc(12 * var(--baseline));
+  --space-y-13: calc(13 * var(--baseline));
+  --space-y-14: calc(14 * var(--baseline));
+  --space-y-15: calc(15 * var(--baseline));
 
   --space-x-1: var(--baseline);
   --space-x-2: calc(2 * var(--baseline));
@@ -28,4 +31,7 @@
   --space-x-10: calc(10 * var(--baseline));
   --space-x-11: calc(11 * var(--baseline));
   --space-x-12: calc(12 * var(--baseline));
+  --space-x-13: calc(13 * var(--baseline));
+  --space-x-14: calc(14 * var(--baseline));
+  --space-x-15: calc(15 * var(--baseline));
 }

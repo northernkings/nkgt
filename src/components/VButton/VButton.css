@@ -1,4 +1,4 @@
-@import '~/assets/styles/resources.css';
+@import "~/assets/styles/resources.css";
 
 .c-button {
   --button-icon-size: 12px;
@@ -26,7 +26,8 @@
   border: 2px solid var(--color-white);
 
   /* Size */
-  padding: var(--space-y-3) var(--space-x-5);
+  padding: var(--space-y-2) var(--space-x-3);
+  max-width: 100%;
 
   /* Text */
   font-family: var(--font-serif);
@@ -34,11 +35,11 @@
   font-weight: 400;
   text-align: center;
   line-height: calc(var(--baseline) * 6);
-  white-space: nowrap;
   cursor: pointer;
 
   @media (--mq-lg) {
     line-height: calc(var(--baseline) * 7);
+    padding: var(--space-y-3) var(--space-x-5);
   }
 
   &:hover,
@@ -85,6 +86,11 @@
     background-color: var(--color-black);
     color: var(--color-white);
     border-color: var(--color-black);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(var(--color-black-rgb), 0.8);
+    }
   }
 
   &--ghost {
@@ -94,6 +100,7 @@
     &:hover,
     &:focus {
       background-color: rgba(var(--color-white-rgb), 0.1);
+      border-color: inherit;
     }
   }
 
@@ -111,6 +118,14 @@
     padding: var(--space-y-4) var(--space-x-8);
     font-size: var(--font-size-4);
     line-height: var(--line-height-4);
+  }
+
+  &--lg\:lg {
+    @media (--mq-lg) {
+      padding: var(--space-y-4) var(--space-x-8);
+      font-size: var(--font-size-4);
+      line-height: var(--line-height-4);
+    }
   }
 
   &[disabled] {
