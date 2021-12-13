@@ -20,6 +20,7 @@
         style="border: 1px solid #aaa"
         allowfullscreen
         loading="lazy"
+        title="Map of Ossett War Memorial Community Centre"
       ></iframe
     ></template>
   </EditorialSection>

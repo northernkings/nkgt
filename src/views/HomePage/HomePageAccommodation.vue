@@ -2,9 +2,9 @@
   <VSection title="Accommodation" :variants="['spacious', 'black', 'center:md']">
     <template v-slot:intro>
       <p>
-        Ossett is a little market town within the City of Wakefield, West Yorkshire. There
-        are multiple boutique hotels within walking distance but also more standard hotels only a
-        three to four minute drive from the venue.
+        Ossett is a little market town within the City of Wakefield, West Yorkshire. There are
+        multiple boutique hotels within walking distance but also more standard hotels only a three
+        to four minute drive from the venue.
       </p>
       <p>Below are links to a few suggestions:</p>
     </template>
@@ -14,6 +14,7 @@
           href="https://www.ihg.com/holidayinn/hotels/gb/en/find-hotels/hotel/rooms?qDest=Queen%27s%20Drive,%20Wakefield,%20GB&qCiMy=52022&qCiD=18&qCoMy=52022&qCoD=19&qAdlt=1&qChld=0&qRms=1&qRtP=6CBARC&qSlH=XWDWY&qAkamaiCC=GB&qSrt=sBR&qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va.ii.sp.nd.ct.sx.we.lx&qAAR=6CBARC&qWch=0&qSmP=1&setPMCookies=true&qRad=30&qRdU=mi&srb_u=1&qpMn=0&qSHBrC=HI"
         >
           <LogoHolidayInn class="c-accommodation__logo c-accommodation__logo--holiday-inn" />
+          <span class="u-sr-only">Holiday Inn</span>
         </a>
       </li>
       <li>
@@ -21,11 +22,13 @@
           href="https://www.wyndhamhotels.com/en-uk/ramada/yorkshire-united-kingdom/ramada-wakefield/rooms-rates?brand_id=RA&checkInDate=6/18/2022&checkOutDate=6/19/2022&useWRPoints=false&children=0&adults=1&rooms=1&loc=ChIJ6XnyiLU1eUgRYIVRMAP6oMs&sessionId=1639404597"
         >
           <LogoRamada class="c-accommodation__logo c-accommodation__logo--ramada" />
+          <span class="u-sr-only">Ramada</span>
         </a>
       </li>
       <li>
         <a href="https://mews-hotel.co.uk/">
           <LogoMews class="c-accommodation__logo c-accommodation__logo--mews" />
+          <span class="u-sr-only">The Mews Hotel</span>
         </a>
       </li>
     </ul>
