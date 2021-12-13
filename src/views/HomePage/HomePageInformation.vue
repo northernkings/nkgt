@@ -36,7 +36,7 @@
     </VButton>
     -->
     <template v-slot:media>
-      <img src="/images/feature-1--900x600.jpg" alt="" loading="lazy" />
+      <img src="/images/feature-1--900x600.jpg" alt="Kings of War game in action" loading="lazy" />
     </template>
   </FeatureSection>
 </template>

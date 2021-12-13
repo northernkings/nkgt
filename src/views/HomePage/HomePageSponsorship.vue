@@ -13,6 +13,7 @@
             src="/images/sponsor-mantic.jpg"
             alt="Mantic"
             width="200"
+            height="177"
             loading="lazy"
           />
         </a>
@@ -23,6 +24,7 @@
             src="/images/sponsor-elysium.jpg"
             alt="Elysium Wargames"
             width="200"
+            height="170"
             loading="lazy"
           />
         </a>

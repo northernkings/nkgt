@@ -23,11 +23,11 @@
     <template v-slot:media>
       <div class="c-media-collage">
         <div class="c-media-collage__section-1">
-          <img src="/images/in-game-5--600x800.jpg" alt="" loading="lazy" />
+          <img src="/images/in-game-5--600x800.jpg" alt="Kings of War miniatures" width="600" height="800" loading="lazy" />
         </div>
         <div class="c-media-collage__section-2">
-          <img src="/images/in-game-4--800x600.jpg" alt="" loading="lazy" />
-          <img src="/images/in-game-1--800x800.jpg" alt="" loading="lazy" />
+          <img src="/images/in-game-4--800x600.jpg" alt="Players at a Northern Kings event" width="800" height="600" loading="lazy" />
+          <img src="/images/in-game-1--800x800.jpg" alt="Rusty at a Northern Kings event" width="800" height="800" loading="lazy" />
         </div>
       </div>
     </template>
