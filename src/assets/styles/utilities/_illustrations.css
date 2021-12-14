@@ -1,3 +1,7 @@
+.u-illustration {
+  opacity: 0.7;
+}
+
 .u-illustration-md {
   max-width: 340px;
   height: auto;

@@ -2,6 +2,7 @@
   <TitleBanner title="A Kings of War tournament celebrating the very best of the hobby" />
   <HomePageOverview />
   <HomePageInformation />
+  <HomePageHobby />
   <HomePageSchedule />
   <Separator />
   <HomePageVenue />
@@ -22,6 +23,7 @@ import HomePageSponsorship from "./HomePageSponsorship.vue";
 import HomePageSchedule from "./HomePageSchedule.vue";
 import HomePageVenue from "./HomePageVenue.vue";
 import HomePageConclusion from "./HomePageConclusion.vue";
+import HomePageHobby from "./HomePageHobby.vue";
 
 export default defineComponent({
   components: {
@@ -29,6 +31,7 @@ export default defineComponent({
     Separator,
     HomePageOverview,
     HomePageInformation,
+    HomePageHobby,
     HomePageAccommodation,
     HomePageSponsorship,
     HomePageSchedule,
