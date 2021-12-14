@@ -23,10 +23,18 @@ export const render = async (pageContext: PageContextBuiltIn & PageContext) => {
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <link rel="icon" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" content="#ffffff">
+        <link rel="manifest" href="/site.webmanifest" />
+
         <title>${title}</title>
         ${dangerouslySkipEscape(meta)}
+
       </head>
       <body>
         <div class="l-page" id="page">${dangerouslySkipEscape(appHtml)}</div>
