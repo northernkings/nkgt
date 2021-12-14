@@ -4,7 +4,7 @@
       <li>
         Lists are to be submitted via email to
         <a href="mailto:lists@thenorthernkings.com">lists@thenorthernkings.com</a>
-        by Midnight, Sunday 8th May. Players who submit their list on time will receive a +5
+        by Midnight, Sunday 12th June. Players who submit their list on time will receive a +5
         Tournament Point bonus.
       </li>
       <li>
