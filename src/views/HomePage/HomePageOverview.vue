@@ -5,8 +5,8 @@
       for dice rolling and social antics.
     </p>
     <p>
-      The Northern Kings GT is a five game, 2300 point Kings of War event, held over two days (17th
-      and 18th June 2022) at The Ossett War Memorial Community Centre, Wakefield. Tickets are priced
+      The Northern Kings GT is a five game, 2300 point Kings of War event, held over two days (18th
+      and 19th June 2022) at The Ossett War Memorial Community Centre, Wakefield. Tickets are priced
       at
       <strong>&pound;45.00</strong> and include a proper lunch on both days and a planned evening
       social.
