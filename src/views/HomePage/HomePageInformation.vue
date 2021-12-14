@@ -1,6 +1,13 @@
 <template>
   <FeatureSection title="Tournament information" :variants="['padded', 'black', 'reverse:lg']">
     <ul>
+      <li>Five game, swiss style tournament with chess clocks.</li>
+      <li>50 minute games at 2300 points.</li>
+      <li>
+        Games will be played using Kings of War 3rd Edition, Uncharted Empires, Rules Committee
+        Published FAQ and Clash of Kings 2022.
+      </li>
+      <li>The Northern Kings positive scoring system will be in play (see pack).</li>
       <li>
         Lists are to be submitted via email to
         <a href="mailto:lists@thenorthernkings.com">lists@thenorthernkings.com</a>
@@ -11,14 +18,10 @@
         Lists are <strong>required</strong> to be generated via
         <a href="https://mantic.easyarmy.com/KingsOfWar">EasyArmy.com</a>.
       </li>
-      <li>Five game, swiss style tournament with chess clocks.</li>
-      <li>50 minute games at 2300 points.</li>
-      <li>Each player is to bring a chess clock.</li>
       <li>
-        Games will be played using Kings of War 3rd Edition, Uncharted Empires, Rules Committee
-        Published FAQ and Clash of Kings 2022.
+        Awards for the top three 'Overall' players (Battle and Hobby combined), Best General,
+        Best Army, Player's Choice, Most Sporting.
       </li>
-      <li>The Northern Kings positive scoring system will be in play (see pack).</li>
       <li>
         Lunch will be provided on both days (please advise us in advance of any dietary
         requirements).
@@ -36,7 +39,13 @@
     </VButton>
     -->
     <template v-slot:media>
-      <img src="/images/feature-1--900x600.jpg" alt="Kings of War game in action" width="900" height="600" loading="lazy" />
+      <img
+        src="/images/feature-1--900x600.jpg"
+        alt="Kings of War game in action"
+        width="900"
+        height="600"
+        loading="lazy"
+      />
     </template>
   </FeatureSection>
 </template>
@@ -51,7 +60,7 @@ export default defineComponent({
   components: {
     FeatureSection,
     VButton,
-    IconDownload
+    IconDownload,
   },
 });
 </script>
