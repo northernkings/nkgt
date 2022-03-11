@@ -29,6 +29,17 @@
           />
         </a>
       </li>
+      <li class="c-sponsors__sponsor c-sponsors__sponsor--army-painter">
+        <a href="https://www.thearmypainter.com/">
+          <img
+            src="/images/sponsor-army-painter.png"
+            alt="The Army Painter"
+            width="200"
+            height="170"
+            loading="lazy"
+          />
+        </a>
+      </li>
     </ul>
     <p>
       If you would like to sponsor our event, please get in touch:
