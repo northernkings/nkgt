@@ -20,7 +20,7 @@
       TO's (which includes multiple previous award winning painters) and is based on an army's
       overall aesthetic and “WOW!” factor.
     </p>
-    <p>Full details about scoring can be found in the tournament pack.</p>
+    <p>Full details about scoring can be found in <a href="/files/NKGT-2022_EventPack_v1.0.pdf">the tournament pack</a>.</p>
     <template v-slot:media>
       <img
         src="/images/illustration--900x1142.jpg"

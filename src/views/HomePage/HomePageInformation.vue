@@ -29,15 +29,14 @@
       <li>Price: <strong>&pound;45.00</strong> per registrant (via PayPal)</li>
     </ul>
     <p>Ensure you read the entire tournament pack before arriving for registration.</p>
-    <p class="u-text-3 u-text-decorative">Tournament pack coming soon!</p>
-    <!--
-    <VButton href="/files/NKGT2022-TournamentPack_v1.0.pdf" :variants="['decorative']">
+
+    <VButton href="/files/NKGT-2022_EventPack_v1.0.pdf" :variants="['decorative']">
       <template v-slot:icon>
         <IconDownload />
       </template>
       Download the Tournament Pack
     </VButton>
-    -->
+
     <template v-slot:media>
       <img
         src="/images/feature-1--900x600.jpg"
