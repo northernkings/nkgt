@@ -11,12 +11,12 @@
       <strong>&pound;45.00</strong> and include a proper lunch on both days and a planned evening
       social.
     </p>
-    <VButton
+    <!-- <VButton
       href="https://www.paypal.com/paypalme/northernkings/45"
       :variants="['lg:lg', 'decorative', 'invert']"
     >
       Buy your ticket
-    </VButton>
+    </VButton> -->
     <template v-slot:media>
       <div class="c-media-collage">
         <div class="c-media-collage__section-1">

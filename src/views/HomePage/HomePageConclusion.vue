@@ -4,12 +4,12 @@
       <p class="u-text-headline u-color-black">
         <span class="u-text-decorative">Are you ready for battle</span>?
       </p>
-      <VButton
+      <!-- <VButton
         href="https://www.paypal.com/paypalme/northernkings/45"
         :variants="['lg:lg', 'decorative', 'invert']"
       >
         Buy your ticket
-      </VButton>
+      </VButton> -->
     </template>
   </VSection>
 </template>

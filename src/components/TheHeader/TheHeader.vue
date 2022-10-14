@@ -17,7 +17,7 @@
         Regional Qualifier
       </p>
     </div>
-    <div class="c-header__book-now">
+    <!-- <div class="c-header__book-now">
       <VButton
         class="c-header__book-now__action"
         href="https://www.paypal.com/paypalme/northernkings/45"
@@ -25,7 +25,7 @@
       >
         Buy your ticket
       </VButton>
-    </div>
+    </div> -->
   </header>
 </template>
 
