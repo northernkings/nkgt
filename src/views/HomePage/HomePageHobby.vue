@@ -17,10 +17,10 @@
     </p>
     <p>
       Hobby is a broad term. It does not inclusively mean 'Best Painted'. Hobby is scored by the
-      TO's (which includes multiple previous award winning painters) and is based on an army's
+      TO's (which includes multiple previous award winning hobbyists) and is based on an army's
       overall aesthetic and “WOW!” factor.
     </p>
-    <p>Full details about scoring can be found in <a href="/files/NKGT-2022_EventPack_v1.0.pdf">the tournament pack</a>.</p>
+    <!-- <p>Full details about scoring can be found in <a href="/files/NKGT-2022_EventPack_v1.0.pdf">the tournament pack</a>.</p> -->
     <template v-slot:media>
       <img
         src="/images/illustration--900x1142.jpg"

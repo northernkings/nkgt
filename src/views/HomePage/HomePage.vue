@@ -1,13 +1,13 @@
 <template>
   <TitleBanner title="A Kings of War tournament celebrating the very best of the hobby" />
   <HomePageOverview />
-  <HomePageInformation />
+  <!-- <HomePageInformation /> -->
   <HomePageHobby />
-  <HomePageSchedule />
+  <!-- <HomePageSchedule /> -->
   <Separator />
   <HomePageVenue />
   <HomePageAccommodation />
-  <HomePageSponsorship />
+  <!-- <HomePageSponsorship /> -->
   <Separator />
   <HomePageConclusion />
 </template>

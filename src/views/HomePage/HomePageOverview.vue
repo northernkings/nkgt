@@ -1,15 +1,16 @@
 <template>
   <EditorialSection title="Devastation, carnage and slaughter awaits" :variants="['reverse:sm']">
     <p class="u-text-4">
-      The Northern Kings; Adam, Elliot, Nick, Tom and Paul, invite you to join them up in t'north
+      The Northern Kings invite you to join them up in t'north
       for dice rolling and social antics.
     </p>
     <p>
-      The Northern Kings GT is a five game, 2300 point Kings of War event, held over two days (18th
-      and 19th June 2022) at The Ossett War Memorial Community Centre, Wakefield. Tickets are priced
-      at
-      <strong>&pound;45.00</strong> and include a proper lunch on both days and a planned evening
-      social.
+      The Northern Kings GT is a five game, 2300 point Kings of War event, held over two days (20th
+      and 21st May 2023) at The Ossett War Memorial Community Centre, Wakefield.
+      <!-- Tickets are priced
+      at -->
+      <!-- <strong>&pound;45.00</strong> and include a proper lunch on both days and a planned evening
+      social. -->
     </p>
     <!-- <VButton
       href="https://www.paypal.com/paypalme/northernkings/45"
@@ -17,6 +18,7 @@
     >
       Buy your ticket
     </VButton> -->
+    <p><strong>More details to follow.</strong></p>
     <template v-slot:media>
       <div class="c-media-collage">
         <div class="c-media-collage__section-1">
