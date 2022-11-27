@@ -1,23 +1,15 @@
-import { createSSRApp, defineComponent, h } from 'vue';
-import LayoutBase from '../layouts/LayoutBase';
-import type { PageContext } from './types';
+import { createSSRApp, defineComponent, h } from "vue";
+import LayoutBase from "../layouts/LayoutBase";
+import type { PageContext } from "./types";
 
 // global styles
-import '~/assets/styles/index.css';
+import "~/assets/styles/index.css";
 
 export const createApp = (pageContext: PageContext, siteData: any) => {
   const { Page, pageProps } = pageContext;
   const PageWithLayout = defineComponent({
     render() {
-      return h(
-        LayoutBase,
-        {},
-        {
-          default() {
-            return h(Page, pageProps || {});
-          },
-        }
-      );
+      return h(Page, pageProps || {});
     },
   });
 

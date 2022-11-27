@@ -1,22 +1,18 @@
+<script lang="ts" setup>
+import TheHeader from "~/components/TheHeader";
+import TheFooter from "~/components/TheFooter";
+
+defineProps({
+  compactHeader: Boolean,
+});
+</script>
+
 <template>
   <div class="l-layout">
-    <TheHeader />
+    <TheHeader :compact="compactHeader" />
     <main class="l-main">
       <slot />
     </main>
     <TheFooter />
   </div>
 </template>
-
-<script lang="ts">
-  import { defineComponent } from 'vue';
-  import TheHeader from '~/components/TheHeader';
-  import TheFooter from '~/components/TheFooter';
-
-  export default defineComponent({
-    components: {
-      TheHeader,
-      TheFooter,
-    },
-  });
-</script>

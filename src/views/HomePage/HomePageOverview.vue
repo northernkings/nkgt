@@ -1,8 +1,7 @@
 <template>
   <EditorialSection title="Devastation, carnage and slaughter awaits" :variants="['reverse:sm']">
     <p class="u-text-4">
-      The Northern Kings invite you to join them up in t'north
-      for dice rolling and social antics.
+      The Northern Kings invite you to join them up in t'north for dice rolling and social antics.
     </p>
     <p>
       The Northern Kings GT is a five game, 2300 point Kings of War event, held over two days (20th
@@ -12,13 +11,10 @@
       <!-- <strong>&pound;45.00</strong> and include a proper lunch on both days and a planned evening
       social. -->
     </p>
-    <!-- <VButton
-      href="https://www.paypal.com/paypalme/northernkings/45"
-      :variants="['lg:lg', 'decorative', 'invert']"
-    >
-      Buy your ticket
-    </VButton> -->
-    <p><strong>More details to follow.</strong></p>
+    <p><strong>More details to follow, but early registration is now open</strong></p>
+    <VButton href="/register" :variants="['lg:lg', 'decorative', 'invert']">
+      Register Now
+    </VButton>
     <template v-slot:media>
       <div class="c-media-collage">
         <div class="c-media-collage__section-1">

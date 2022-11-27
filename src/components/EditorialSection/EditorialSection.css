@@ -1,4 +1,4 @@
-@import '~/assets/styles/resources.css';
+@import "~/assets/styles/resources.css";
 
 .c-editorial-section {
   padding-top: var(--space-y-7);
@@ -48,6 +48,10 @@
   @media (--mq-lg) {
     flex-direction: row-reverse;
   }
+}
+
+.c-editorial-section--single .c-editorial-section__inner {
+  max-width: 75ch;
 }
 
 .c-editorial-section--reverse\:lg .c-editorial-section__inner {

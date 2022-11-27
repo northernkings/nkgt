@@ -7,10 +7,10 @@
 }
 
 .l-flow > :is(h2, h3, h4, h5, h6) + * {
-  margin-top: var(--space-y-1);
+  margin-top: var(--space-y-3);
 
   @media (--mq-md) {
-    margin-top: var(--space-y-2);
+    margin-top: var(--space-y-4);
   }
 }
 

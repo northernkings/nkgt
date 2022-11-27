@@ -21,6 +21,16 @@
     background-attachment: fixed;
   }
 
+  &--compact {
+    height: 300px;
+    min-height: 300px;
+
+    @media (--mq-md) {
+      background-image: url('~/assets/images/header-bg--lg.jpg');
+      background-attachment: fixed;
+    }
+  }
+
   &::before {
     content: '';
     width: 120vw;
@@ -87,8 +97,30 @@
   }
 }
 
+.c-header--compact .c-header__main {
+  padding: 0 var(--space-x-4);
+
+  @media (--mq-md) {
+    padding-bottom: 50px;
+  }
+}
+
 .c-header__logo {
   position: relative;
+  width: 70vw;
+  max-width: 260px;
+
+  @media (--mq-md) {
+    max-width: 460px;
+  }
+
+  @media (--mq-md) and (max-height: 768px) {
+    max-width: 360px;
+  }
+}
+
+.c-header__logo--compact {
+  width: 150px;
 }
 
 .c-header__logo__smoke {
@@ -132,19 +164,11 @@
 
 .c-header__logo__image {
   fill: var(--color-white);
-  width: 70vw;
-  max-width: 260px;
   display: block;
   z-index: 2;
   position: relative;
-
-  @media (--mq-md) {
-    max-width: 460px;
-  }
-
-  @media (--mq-md) and (max-height: 768px) {
-    max-width: 360px;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 .c-header .nkgt-logo {
