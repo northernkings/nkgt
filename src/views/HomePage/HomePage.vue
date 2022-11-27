@@ -2,10 +2,10 @@
 import TitleBanner from "~/components/TitleBanner";
 import Separator from "~/components/Separator";
 import HomePageOverview from "./HomePageOverview.vue";
-// import HomePageInformation from "./HomePageInformation.vue";
+import HomePageInformation from "./HomePageInformation.vue";
 import HomePageAccommodation from "./HomePageAccommodation.vue";
 // import HomePageSponsorship from "./HomePageSponsorship.vue";
-// import HomePageSchedule from "./HomePageSchedule.vue";
+import HomePageSchedule from "./HomePageSchedule.vue";
 import HomePageVenue from "./HomePageVenue.vue";
 import HomePageConclusion from "./HomePageConclusion.vue";
 import HomePageHobby from "./HomePageHobby.vue";
@@ -16,9 +16,9 @@ import LayoutBase from "~/layouts/LayoutBase";
   <LayoutBase>
     <TitleBanner title="A Kings of War tournament celebrating the very best of the hobby" />
     <HomePageOverview />
-    <!-- <HomePageInformation /> -->
+    <HomePageInformation />
     <HomePageHobby />
-    <!-- <HomePageSchedule /> -->
+    <HomePageSchedule />
     <Separator />
     <HomePageVenue />
     <HomePageAccommodation />

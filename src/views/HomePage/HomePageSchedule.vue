@@ -3,9 +3,9 @@
     <div class="l-grid l-grid--cols-2:md">
       <div class="l-flow">
         <p>
-          Round times are 2 hours 15 minutes each in total; 1 hour 40 minutes for gaming and 35
-          minutes for meeting and greeting, grabbing drinks, toilet breaks, rules queries,
-          calculating and submitting scores etc. Each player has 50 minutes on the clock, after
+          Round times are 2 hours 15 minutes each in total; a maximum 2 hours for gaming and 15
+          minutes for greetings, grabbing drinks, toilet breaks, rules queries,
+          calculating and submitting scores etc. Each player has 60 minutes on the clock, after
           which it is 'dice down'.
         </p>
         <p>

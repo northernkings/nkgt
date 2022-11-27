@@ -9,7 +9,7 @@
     </p>
     <p>
       <strong>More details to follow, but early registration is now open</strong>. Tickets are
-      priced at <strong>&pound;55.00</strong> and include a proper lunch on both days and a planned
+      priced at <strong>&pound;55.00</strong>, include a proper lunch on both days and a planned
       evening social.
     </p>
     <VButton href="/register" :variants="['lg:lg', 'decorative', 'invert']"> Register Now </VButton>
