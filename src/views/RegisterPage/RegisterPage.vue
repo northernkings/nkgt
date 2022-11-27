@@ -24,35 +24,45 @@ defineProps({
       </p>
       <Separator :compact="true" />
       <form
+        action="/register-step-2/"
         name="nkgtRegistration2023"
         method="POST"
-        data-netlify="true"
-        data-netlify-recaptcha="true"
         netlify-honeypot="bot-field"
-        action="/register-step-2"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+        class="c-form"
       >
         <div class="u-hidden">
           <label for="bot-field">Ignore this field if you are human</label>
           <input id="bot-field" name="bot-field" />
+          <input type="hidden" name="subject" value="Northern Kings GT 2023 - Registration" />
+          <input type="hidden" name="form-name" value="nkgtRegistration2023" />
         </div>
 
-        <input type="hidden" name="subject" value="Northern Kings GT - 2023 Registration" />
+        <div class="c-form__group">
+          <label for="name">Attendee's Full Name</label>
+          <input id="name" name="name" type="text" required placeholder="e.g. Ronnie Renton" />
+        </div>
 
-        <label for="name">Attendee's Full Name</label>
-        <input id="name" name="name" type="text" required placeholder="e.g. Ronnie Renton" />
-        <label for="email">Contact Email</label>
-        <p>
-          <small>
-            Note: we will only use your email address to communicate with you about about the event.
-          </small>
-        </p>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          placeholder="e.g. ronnie@example.com"
-        />
+        <div class="c-form__group">
+          <label for="email">Contact Email</label>
+          <p>
+            <small>
+              Note: we will only use your email address to communicate with you about about the
+              event.
+            </small>
+          </p>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="e.g. ronnie@example.com"
+          />
+        </div>
+
+        <div class="c-form__group" data-netlify-recaptcha="true"></div>
+
         <VButton type="submit" :variants="['decorative', 'invert']">
           Submit and Continue to Payment
         </VButton>
@@ -103,9 +113,12 @@ input[type="text"],
 input[type="email"] {
   width: 100%;
   margin-top: var(--space-x-2);
-  margin-bottom: var(--space-x-6);
   padding: var(--space-y-3) var(--space-x-3);
   border-radius: 0;
   border: 2px solid var(--color-brand-fuscous);
+}
+
+.c-form__group {
+  margin-bottom: var(--space-x-6);
 }
 </style>
