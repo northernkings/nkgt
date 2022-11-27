@@ -86,7 +86,7 @@ defineProps({
       </p>
       <VButton
         class="c-header__book-now__action"
-        href="https://www.paypal.com/paypalme/northernkings/50"
+        href="https://www.paypal.com/paypalme/northernkings/55"
         :variants="['invert', 'decorative', 'lg']"
       >
         Complete Registration with PayPal
