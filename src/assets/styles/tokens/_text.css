@@ -19,4 +19,6 @@
   --font-family-base: var(--font-serif);
   --line-height-base: 1.35;
   --font-family-heading: "RomanceFatal", var(--font-serif);
+
+  --heading-color: var(--color-black);
 }

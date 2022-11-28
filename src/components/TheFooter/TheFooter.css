@@ -7,7 +7,7 @@
   flex-direction: column;
   text-align: center;
   background-color: var(--color-black);
-  background-image: url('~/assets/images/header-bg--sm.jpg');
+  background-image: url('~/assets/images/header-bg--sm.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 75%;
@@ -21,7 +21,7 @@
   }
 
   @media (--mq-md) {
-    background-image: url('~/assets/images/header-bg--lg.jpg');
+    background-image: url('~/assets/images/header-bg--lg.webp');
   }
 
   &::before {
