@@ -22,6 +22,10 @@ defineProps({
         If you're planning on registering for multiple attendees, please complete a registration for
         each player individually.
       </p>
+      <p>
+        Tickets are priced at <strong>&pound;55</strong>, include a proper lunch on both days and a planned evening
+        social.
+      </p>
       <Separator :compact="true" />
       <form
         action="/register-step-2/"
@@ -64,7 +68,7 @@ defineProps({
         <div class="c-form__group" data-netlify-recaptcha="true"></div>
 
         <VButton type="submit" :variants="['decorative', 'invert']">
-          Submit and Continue to Payment
+          Submit and Continue to Payment (&pound;55)
         </VButton>
       </form>
     </EditorialSection>
