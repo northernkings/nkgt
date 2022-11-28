@@ -17,7 +17,7 @@
           journeys home.
         </p>
         <p><strong>The schedule may be adjusted on the day.</strong></p>
-        <img src="/images/illustration--600x431.png" alt="" class="u-illustration-md" />
+        <img src="/images/illustration--600x431.webp" alt="" class="u-illustration-md" />
       </div>
       <div class="l-flow">
         <table class="b-table b-table--center b-table--zebra">

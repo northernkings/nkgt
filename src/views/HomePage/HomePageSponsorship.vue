@@ -32,7 +32,7 @@
       <li class="c-sponsors__sponsor c-sponsors__sponsor--army-painter">
         <a href="https://www.thearmypainter.com/">
           <img
-            src="/images/sponsor-army-painter.png"
+            src="/images/sponsor-army-painter.webp"
             alt="The Army Painter"
             width="200"
             height="170"
@@ -43,7 +43,7 @@
       <li class="c-sponsors__sponsor c-sponsors__sponsor--rosemaryco">
         <a href="https://www.rosemaryandco.com/">
           <img
-            src="/images/sponsor-rosemaryco.png"
+            src="/images/sponsor-rosemaryco.webp"
             alt="Rosemary & Co."
             width="275"
             height="170"
@@ -54,7 +54,7 @@
       <li class="c-sponsors__sponsor c-sponsors__sponsor--deepcut">
         <a href="https://www.deepcutstudio.com/">
           <img
-            src="/images/sponsor-deepcut.png"
+            src="/images/sponsor-deepcut.webp"
             alt="Deep-Cut Studios"
             width="170"
             height="170"
