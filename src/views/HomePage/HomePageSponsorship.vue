@@ -10,7 +10,7 @@
       <li class="c-sponsors__sponsor c-sponsors__sponsor--mantic">
         <a href="https://www.manticgames.com/">
           <img
-            src="/images/sponsor-mantic.jpg"
+            src="/images/sponsor-mantic.webp"
             alt="Mantic"
             width="200"
             height="177"
@@ -21,7 +21,7 @@
       <li class="c-sponsors__sponsor c-sponsors__sponsor--elysium">
         <a href="https://www.elysiumwargames.com/">
           <img
-            src="/images/sponsor-elysium.jpg"
+            src="/images/sponsor-elysium.webp"
             alt="Elysium Wargames"
             width="200"
             height="170"

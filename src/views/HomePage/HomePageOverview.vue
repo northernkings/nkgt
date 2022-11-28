@@ -17,7 +17,7 @@
       <div class="c-media-collage">
         <div class="c-media-collage__section-1">
           <img
-            src="/images/in-game-5--600x800.jpg"
+            src="/images/in-game-2023-5--600x800.webp"
             alt="Kings of War miniatures"
             width="600"
             height="800"
@@ -26,15 +26,15 @@
         </div>
         <div class="c-media-collage__section-2">
           <img
-            src="/images/in-game-4--800x600.jpg"
-            alt="Players at a Northern Kings event"
+            src="/images/in-game-2023-4--800x600.webp"
+            alt="Kings of War miniatures"
             width="800"
             height="600"
             loading="lazy"
           />
           <img
-            src="/images/in-game-1--800x800.jpg"
-            alt="Rusty at a Northern Kings event"
+            src="/images/in-game-2023-1--800x800.webp"
+            alt="Players at a Northern Kings event"
             width="800"
             height="800"
             loading="lazy"

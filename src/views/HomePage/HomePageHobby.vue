@@ -23,7 +23,7 @@
     <!-- <p>Full details about scoring can be found in <a href="/files/NKGT-2022_EventPack_v1.0.pdf">the tournament pack</a>.</p> -->
     <template v-slot:media>
       <img
-        src="/images/illustration--900x1142.jpg"
+        src="/images/illustration--900x1142.webp"
         alt="Kings of War illustration"
         width="900"
         height="1142"

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-black);
-  background-image: url('~/assets/images/header-bg--sm.jpg');
+  background-image: url('~/assets/images/header-bg--sm.webp');
   background-size: cover;
   background-position: 50% 75%;
   color: var(--color-white);
@@ -17,7 +17,7 @@
 
   @media (--mq-md) {
     min-height: 768px;
-    background-image: url('~/assets/images/header-bg--lg.jpg');
+    background-image: url('~/assets/images/header-bg--lg.webp');
     background-attachment: fixed;
   }
 
@@ -26,7 +26,7 @@
     min-height: 300px;
 
     @media (--mq-md) {
-      background-image: url('~/assets/images/header-bg--lg.jpg');
+      background-image: url('~/assets/images/header-bg--lg.webp');
       background-attachment: fixed;
     }
   }

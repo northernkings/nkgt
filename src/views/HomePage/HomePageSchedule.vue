@@ -57,7 +57,7 @@
             </tr>
             <tr>
               <th>Evening Social</th>
-              <td>18:30</td>
+              <td>19:00</td>
             </tr>
           </tbody>
         </table>

@@ -41,7 +41,7 @@
 
     <template v-slot:media>
       <img
-        src="/images/feature-1--900x600.jpg"
+        src="/images/feature-2023-3--900x600.webp"
         alt="Kings of War game in action"
         width="900"
         height="600"
