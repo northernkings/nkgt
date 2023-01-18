@@ -35,7 +35,7 @@ defineProps({
           <UkCokLogo class="c-header__cok" />
           Regional Qualifier
         </p> -->
-        <p class="c-header__strapline u-text-uppercase">More details to follow…</p>
+        <!-- <p class="c-header__strapline u-text-uppercase">More details to follow…</p> -->
       </template>
     </div>
     <div class="c-header__book-now">
