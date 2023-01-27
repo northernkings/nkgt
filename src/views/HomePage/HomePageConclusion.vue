@@ -4,12 +4,10 @@
       <p class="u-text-headline u-color-black">
         <span class="u-text-decorative">Are you ready for battle</span>?
       </p>
-      <VButton
-        href="/register"
-        :variants="['lg:lg', 'decorative', 'invert']"
-      >
+      <!-- <VButton href="/register" :variants="['lg:lg', 'decorative', 'invert']">
         Register Now
-      </VButton>
+      </VButton> -->
+      <VButton disabled :variants="['lg:lg', 'decorative', 'invert']">Sold Out</VButton>
     </template>
   </VSection>
 </template>

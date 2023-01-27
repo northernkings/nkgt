@@ -12,7 +12,8 @@
       priced at <strong>&pound;55.00</strong>, include a proper lunch on both days and a planned
       evening social.
     </p>
-    <VButton href="/register" :variants="['lg:lg', 'decorative', 'invert']"> Register Now </VButton>
+    <!-- <VButton href="/register" :variants="['lg:lg', 'decorative', 'invert']">Register Now</VButton> -->
+    <VButton disabled :variants="['lg:lg', 'decorative', 'invert']">Sold Out</VButton>
     <template v-slot:media>
       <div class="c-media-collage">
         <div class="c-media-collage__section-1">
