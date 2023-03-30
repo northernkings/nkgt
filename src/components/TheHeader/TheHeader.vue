@@ -13,7 +13,9 @@ defineProps({
   <header :class="['c-header', compact && 'c-header--compact']">
     <div class="c-header__presents">
       <span class="c-header__presents-label">The</span>
-      <NorthernKingsLogo class="c-header__presents-logo" />
+      <a href="https://thenorthernkings.com/">
+        <NorthernKingsLogo class="c-header__presents-logo" />
+      </a>
       <span class="c-header__presents-label">Present</span>
     </div>
     <div class="c-header__main">
