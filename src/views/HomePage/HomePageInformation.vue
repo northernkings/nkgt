@@ -10,7 +10,7 @@
       <li>The Northern Kings positive scoring system will be in play (see pack).</li>
       <li>
         Lists are to be submitted via email to
-        <a href="mailto:lists@thenorthernkings.com">lists@thenorthernkings.com</a>
+        <a href="mailto:northernkings.kow@gmail.com">northernkings.kow@gmail.com</a>
         by Midnight, Sunday 13th May. Players who submit their list on time will receive a +5
         Tournament Point bonus.
       </li>
