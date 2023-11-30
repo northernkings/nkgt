@@ -23,7 +23,7 @@ defineProps({
         each player individually.
       </p>
       <p>
-        Tickets are priced at <strong>&pound;55</strong>, include a proper lunch on both days and a planned evening
+        Tickets are priced at <strong>&pound;60</strong>, include a proper lunch on both days and a planned evening
         social.
       </p>
       <Separator :compact="true" />
@@ -68,7 +68,7 @@ defineProps({
         <div class="c-form__group" data-netlify-recaptcha="true"></div>
 
         <VButton type="submit" :variants="['decorative', 'invert']">
-          Submit and Continue to Payment (&pound;55)
+          Submit and Continue to Payment (&pound;60)
         </VButton>
       </form>
     </EditorialSection>
@@ -90,7 +90,7 @@ defineProps({
       </p>
       <VButton
         class="c-header__book-now__action"
-        href="https://www.paypal.com/paypalme/northernkings/55"
+        href="https://www.paypal.com/paypalme/northernkings/60"
         :variants="['invert', 'decorative', 'lg']"
       >
         Complete Registration with PayPal

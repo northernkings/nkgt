@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import GtLogo from "~/assets/images/nkgt-2023-logo.svg?component";
+import GtLogo from "~/assets/images/nkgt-2024-logo.svg?component";
 import NorthernKingsLogo from "~/assets/images/nk-logo-vertical.svg?component";
 import UkCokLogo from "~/assets/images/uk-cok-logo.svg?component";
 import VButton from "~/components/VButton";
@@ -31,26 +31,26 @@ defineProps({
           <GtLogo class="c-header__logo__image" />
         </div>
         <p class="c-header__date">
-          Ossett, West Yorkshire. <span>May 20<sup>th</sup> and 21<sup>st</sup> </span>
+          Ossett, West Yorkshire. <span>August 17<sup>th</sup> and 18<sup>th</sup> </span>
         </p>
         <!-- <p class="c-header__strapline u-text-uppercase">
           <UkCokLogo class="c-header__cok" />
           Regional Qualifier
         </p> -->
-        <p class="c-header__strapline u-text-uppercase">Sorry, the event has now sold out</p>
+        <!-- <p class="c-header__strapline u-text-uppercase">Sorry, the event has now sold out</p> -->
       </template>
     </div>
     <div class="c-header__book-now">
-      <!-- <VButton
+      <VButton
         class="c-header__book-now__action"
         href="/register"
         :variants="['sm', 'lg:lg', 'decorative', 'ghost', 'invert']"
       >
         Register Now
-      </VButton> -->
-      <VButton disabled :variants="['sm', 'lg:lg', 'decorative', 'ghost', 'invert']">
-        Sold Out
       </VButton>
+      <!-- <VButton disabled :variants="['sm', 'lg:lg', 'decorative', 'ghost', 'invert']">
+        Sold Out
+      </VButton> -->
     </div>
   </header>
 </template>
