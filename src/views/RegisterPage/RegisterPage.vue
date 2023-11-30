@@ -23,13 +23,13 @@ defineProps({
         each player individually.
       </p>
       <p>
-        Tickets are priced at <strong>&pound;55</strong>, include a proper lunch on both days and a planned evening
+        Tickets are priced at <strong>&pound;60</strong>, include a proper lunch on both days and a planned evening
         social.
       </p>
       <Separator :compact="true" />
       <form
         action="/register-step-2/"
-        name="nkgtRegistration2023"
+        name="nkgtRegistration2024"
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
@@ -39,8 +39,8 @@ defineProps({
         <div class="u-hidden">
           <label for="bot-field">Ignore this field if you are human</label>
           <input id="bot-field" name="bot-field" />
-          <input type="hidden" name="subject" value="Northern Kings GT 2023 - Registration" />
-          <input type="hidden" name="form-name" value="nkgtRegistration2023" />
+          <input type="hidden" name="subject" value="Northern Kings GT 2024 - Registration" />
+          <input type="hidden" name="form-name" value="nkgtRegistration2024" />
         </div>
 
         <div class="c-form__group">
@@ -68,7 +68,7 @@ defineProps({
         <div class="c-form__group" data-netlify-recaptcha="true"></div>
 
         <VButton type="submit" :variants="['decorative', 'invert']">
-          Submit and Continue to Payment (&pound;55)
+          Submit and Continue to Payment (&pound;60)
         </VButton>
       </form>
     </EditorialSection>
@@ -90,7 +90,7 @@ defineProps({
       </p>
       <VButton
         class="c-header__book-now__action"
-        href="https://www.paypal.com/paypalme/northernkings/55"
+        href="https://www.paypal.com/paypalme/northernkings/60"
         :variants="['invert', 'decorative', 'lg']"
       >
         Complete Registration with PayPal

@@ -1,7 +1,7 @@
 const { VITE_SITE_URL } = import.meta.env;
 
 export const siteData = {
-  title: 'Northern Kings Grand Tournament 2023',
-  description: 'The Northern Kings GT, a Kings of War event - 20th and 21st May 2023',
+  title: 'Northern Kings Grand Tournament 2024',
+  description: 'The Northern Kings GT, a Kings of War event - 17th and 18th August 2024',
   siteUrl: VITE_SITE_URL,
 };
