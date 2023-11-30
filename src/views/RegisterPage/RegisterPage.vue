@@ -29,7 +29,7 @@ defineProps({
       <Separator :compact="true" />
       <form
         action="/register-step-2/"
-        name="nkgtRegistration2023"
+        name="nkgtRegistration2024"
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
@@ -39,8 +39,8 @@ defineProps({
         <div class="u-hidden">
           <label for="bot-field">Ignore this field if you are human</label>
           <input id="bot-field" name="bot-field" />
-          <input type="hidden" name="subject" value="Northern Kings GT 2023 - Registration" />
-          <input type="hidden" name="form-name" value="nkgtRegistration2023" />
+          <input type="hidden" name="subject" value="Northern Kings GT 2024 - Registration" />
+          <input type="hidden" name="form-name" value="nkgtRegistration2024" />
         </div>
 
         <div class="c-form__group">
