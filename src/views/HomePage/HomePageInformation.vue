@@ -11,7 +11,7 @@
       <li>
         Lists are to be submitted via email to
         <a href="mailto:northernkings.kow@gmail.com">northernkings.kow@gmail.com</a>
-        by Midnight, Sunday 11th August. Players who submit their list on time will receive a +5
+        by Midnight, Sunday 3rd August. Players who submit their list on time will receive a +5
         Tournament Point bonus.
       </li>
       <li>
@@ -30,14 +30,14 @@
     </ul>
     <p>Ensure you read the entire tournament pack before arriving for registration.</p>
 
-    <!-- <VButton href="/files/NKGT-2023_EventPack_v1.0.pdf" :variants="['decorative']">
+    <VButton href="/files/NKGT-2024_EventPack_v1.0.pdf" :variants="['decorative']">
       <template v-slot:icon>
         <IconDownload />
       </template>
       Download the Tournament Pack
-    </VButton> -->
+    </VButton>
 
-    <p><strong>Tournament Pack to follow.</strong></p>
+    <!-- <p><strong>Tournament Pack to follow.</strong></p> -->
 
     <template v-slot:media>
       <img
