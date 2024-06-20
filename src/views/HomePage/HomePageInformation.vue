@@ -30,6 +30,7 @@
     </ul>
     <p>Ensure you read the entire tournament pack before arriving for registration.</p>
 
+
     <VButton href="/files/NKGT-2024_EventPack_v1.0.pdf" :variants="['decorative']">
       <template v-slot:icon>
         <IconDownload />
