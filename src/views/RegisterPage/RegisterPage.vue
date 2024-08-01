@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <LayoutBase :compact-header="true">
-    <EditorialSection
+    <!-- <EditorialSection
       title="Step 1: Attendee Details"
       :variants="['single']"
       title-as="h1"
@@ -96,6 +96,10 @@ defineProps({
         Complete Registration with PayPal
       </VButton>
       <p><small>Note: Any registration without a matching payment will be disregarded.</small></p>
+    </EditorialSection> -->
+
+    <EditorialSection title="Registration" :variants="['single']">
+      <p>Sorry, the event has now sold out. Please email northernkings.kow@gmail.com to be added to the reserve list.</p>
     </EditorialSection>
   </LayoutBase>
 </template>

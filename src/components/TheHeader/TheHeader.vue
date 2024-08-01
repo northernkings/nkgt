@@ -37,20 +37,20 @@ defineProps({
           <UkCokLogo class="c-header__cok" />
           Regional Qualifier
         </p> -->
-        <!-- <p class="c-header__strapline u-text-uppercase">Sorry, the event has now sold out</p> -->
+        <p class="c-header__strapline u-text-uppercase">Sorry, the event has now sold out</p>
       </template>
     </div>
     <div class="c-header__book-now">
-      <VButton
+      <!-- <VButton
         class="c-header__book-now__action"
         href="/register"
         :variants="['sm', 'lg:lg', 'decorative', 'ghost', 'invert']"
       >
         Register Now
-      </VButton>
-      <!-- <VButton disabled :variants="['sm', 'lg:lg', 'decorative', 'ghost', 'invert']">
-        Sold Out
       </VButton> -->
+      <VButton disabled :variants="['sm', 'lg:lg', 'decorative', 'ghost', 'invert']">
+        Sold Out
+      </VButton>
     </div>
   </header>
 </template>
