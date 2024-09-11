@@ -19,7 +19,7 @@ export const documentProps = {
     { property: "og:type", content: "website" },
     {
       property: "og:image",
-      content: `${siteData.siteUrl}/nkgt2024-ograph.jpg`,
+      content: `${siteData.siteUrl}/nkgt2025-ograph.jpg`,
     },
     {
       property: "og:description",

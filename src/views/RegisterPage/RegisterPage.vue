@@ -3,15 +3,23 @@ import EditorialSection from "~/components/EditorialSection";
 import VButton from "~/components/VButton";
 import LayoutBase from "~/layouts/LayoutBase";
 import Separator from "~/components/Separator";
+import { ref } from "vue";
 
 defineProps({
   step: Number,
+});
+
+const data = ref({
+  name: "",
+  email: "",
+  team: "",
+  assignTeam: false,
 });
 </script>
 
 <template>
   <LayoutBase :compact-header="true">
-    <!-- <EditorialSection
+    <EditorialSection
       title="Step 1: Attendee Details"
       :variants="['single']"
       title-as="h1"
@@ -23,13 +31,13 @@ defineProps({
         each player individually.
       </p>
       <p>
-        Tickets are priced at <strong>&pound;60</strong>, include a proper lunch on both days and a planned evening
-        social.
+        Tickets are priced at <strong>&pound;60</strong>, include a proper lunch on both days and a
+        planned evening social.
       </p>
       <Separator :compact="true" />
       <form
         action="/register-step-2/"
-        name="nkgtRegistration2024"
+        name="nkgtRegistration2025"
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
@@ -39,13 +47,20 @@ defineProps({
         <div class="u-hidden">
           <label for="bot-field">Ignore this field if you are human</label>
           <input id="bot-field" name="bot-field" />
-          <input type="hidden" name="subject" value="Northern Kings GT 2024 - Registration" />
-          <input type="hidden" name="form-name" value="nkgtRegistration2024" />
+          <input type="hidden" name="subject" value="Northern Kings GT 2025 - Registration" />
+          <input type="hidden" name="form-name" value="nkgtRegistration2025" />
         </div>
 
         <div class="c-form__group">
           <label for="name">Attendee's Full Name</label>
-          <input id="name" name="name" type="text" required placeholder="e.g. Ronnie Renton" />
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            placeholder="e.g. Ronnie Renton"
+            v-model="data.name"
+          />
         </div>
 
         <div class="c-form__group">
@@ -62,7 +77,37 @@ defineProps({
             type="email"
             required
             placeholder="e.g. ronnie@example.com"
+            v-model="data.email"
           />
+        </div>
+
+        <div class="c-form__group">
+          <label for="team">Team Name (Optional)</label>
+          <p>
+            <small>
+              Note: We will endevour to keep teams apart for game one, but we cannot guarantee this.
+            </small>
+          </p>
+          <input
+            id="team"
+            name="team"
+            type="text"
+            placeholder="e.g. Moonrakers"
+            v-model="data.team"
+          />
+        </div>
+
+        <div class="c-form__group c-form__group--inline" v-if="data.team.length < 1">
+          <input
+            id="assignTeam"
+            name="assignTeam"
+            type="checkbox"
+            value="Yes please"
+            v-model="data.assignTeam"
+          />
+          <label for="assignTeam"
+            >I don't have a team, please assign me to a one (if possible)</label
+          >
         </div>
 
         <div class="c-form__group" data-netlify-recaptcha="true"></div>
@@ -96,11 +141,11 @@ defineProps({
         Complete Registration with PayPal
       </VButton>
       <p><small>Note: Any registration without a matching payment will be disregarded.</small></p>
-    </EditorialSection> -->
-
-    <EditorialSection title="Registration" :variants="['single']">
-      <p>Sorry, the event has now sold out. Please email northernkings.kow@gmail.com to be added to the reserve list.</p>
     </EditorialSection>
+
+    <!-- <EditorialSection title="Registration" :variants="['single']">
+      <p>Sorry, the event has now sold out. Please email northernkings.kow@gmail.com to be added to the reserve list.</p>
+    </EditorialSection> -->
   </LayoutBase>
 </template>
 
@@ -127,6 +172,12 @@ input[type="email"] {
 }
 
 .c-form__group {
-  margin-bottom: var(--space-x-6);
+  margin-bottom: var(--space-y-6);
+}
+
+.c-form__group--inline {
+  display: flex;
+  align-items: center;
+  gap: var(--space-x-3);
 }
 </style>
