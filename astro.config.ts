@@ -1,6 +1,6 @@
-import { defineConfig } from "astro/config";
-import react from "@astrojs/react";
-import svgr from "vite-plugin-svgr";
+import react from '@astrojs/react';
+import { defineConfig } from 'astro/config';
+import svgr from 'vite-plugin-svgr';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,15 +8,15 @@ export default defineConfig({
   vite: {
     plugins: [svgr()],
     ssr: {
-      noExternal: ["modern-normalize", "focus-visible"],
+      noExternal: ['modern-normalize', 'focus-visible'],
     },
     build: {
-      target: "esnext",
-      minify: "esbuild",
+      target: 'esnext',
+      minify: 'esbuild',
     },
   },
-  output: "static",
+  output: 'static',
   build: {
-    format: "directory",
+    format: 'directory',
   },
 });

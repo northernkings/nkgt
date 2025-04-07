@@ -26,7 +26,7 @@ pnpm install
 pnpm dev
 ```
 
-The site will be available at http://localhost:4321
+The site will be available at <http://localhost:4321>
 
 ### Build
 
@@ -41,12 +41,14 @@ pnpm preview
 ## Directory Structure
 
 - `src/` - Source code
+  - `@types/` - TypeScript type definitions
   - `assets/` - Static assets (images, fonts, etc.)
   - `components/` - React components
   - `data/` - Data files
   - `layouts/` - Astro layout components
   - `pages/` - Astro pages (file-based routing)
   - `styles/` - Global CSS styles
+  - `utils/` - Utility functions and helpers
   - `views/` - Page-specific components
 
 ## Deployment
