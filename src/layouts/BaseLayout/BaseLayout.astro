@@ -2,6 +2,7 @@
 import '../../styles/global.css';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header';
+import { siteData } from '../../data/site';
 import type { BaseLayoutProps } from './BaseLayout.types';
 
 type Props = BaseLayoutProps;
@@ -23,11 +24,11 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, siteData.siteUrl).toString()} />
     <meta property="og:title" content={title} />
     <meta property="og:site_name" content="The Northern Kings GT" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content={new URL(image, Astro.url)} />
+    <meta property="og:image" content={new URL(image, siteData.siteUrl).toString()} />
     <meta property="og:description" content={description} />
   </head>
   <body>
