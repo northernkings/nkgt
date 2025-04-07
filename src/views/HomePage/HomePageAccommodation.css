@@ -1,0 +1,57 @@
+@import '../../assets/styles/resources.css';
+
+.c-accommodation__list {
+  --color-action: var(--color-neutral-white);
+  --color-action-underline-rgb: var(--color-neutral-white-rgb);
+
+  display: flex;
+  align-items: center;
+  gap: var(--grid-gap);
+  margin-top: var(--grid-gap);
+  justify-content: center;
+  max-width: none;
+}
+
+.c-accommodation__list li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.c-accommodation__list li:before {
+  display: none;
+}
+
+.c-accommodation__logo {
+  fill: currentColor;
+}
+
+.c-accommodation__logo--ramada {
+  height: 70px;
+}
+
+@media (--mq-md) {
+  .c-accommodation__logo--ramada {
+    height: 90px;
+  }
+}
+
+.c-accommodation__logo--holiday-inn {
+  height: 100px;
+}
+
+@media (--mq-md) {
+  .c-accommodation__logo--holiday-inn {
+    height: 120px;
+  }
+}
+
+.c-accommodation__logo--mews {
+  height: 90px;
+}
+
+@media (--mq-md) {
+  .c-accommodation__logo--mews {
+    height: 110px;
+  }
+}

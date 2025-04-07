@@ -1,0 +1,13 @@
+---
+import { siteData } from '../data/site';
+import { BaseLayout } from '../layouts/BaseLayout';
+import { RegisterPage } from '../views/RegisterPage';
+
+const title = `Register - ${siteData.title}`;
+const description =
+  'Register for the Northern Kings GT, a Kings of War tournament celebrating the very best of the hobby';
+---
+
+<BaseLayout title={title} description={description} compactHeader={true}>
+  <RegisterPage client:visible />
+</BaseLayout>

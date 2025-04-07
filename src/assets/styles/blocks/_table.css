@@ -26,3 +26,7 @@
 .b-table--zebra tr:nth-child(even) {
   background-color: rgba(var(--color-brand-mondo-rgb), 0.05);
 }
+
+.b-table .b-table__cell--center {
+  text-align: center;
+}

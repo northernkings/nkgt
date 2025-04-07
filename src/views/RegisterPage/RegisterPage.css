@@ -1,1 +1,30 @@
-@import '~/assets/styles/resources.css';
+@import '../../assets/styles/resources.css';
+
+label {
+  display: block;
+}
+
+small {
+  display: block;
+  line-height: 1.2;
+  margin-top: var(--space-x-1);
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  margin-top: var(--space-x-2);
+  padding: var(--space-y-3) var(--space-x-3);
+  border-radius: 0;
+  border: 2px solid var(--color-brand-fuscous);
+}
+
+.c-form__group {
+  margin-bottom: var(--space-y-6);
+}
+
+.c-form__group--inline {
+  display: flex;
+  align-items: center;
+  gap: var(--space-x-3);
+}

@@ -1,0 +1,40 @@
+@import '../../assets/styles/resources.css';
+
+.c-picture {
+  display: block;
+
+  &__picture {
+    display: block;
+    margin: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  &--maintain-ratio &__image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__caption {
+    display: block;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    color: var(--color-mid-grey);
+    padding: var(--space-y-1) 0 0;
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-xs);
+    font-style: italic;
+  }
+}

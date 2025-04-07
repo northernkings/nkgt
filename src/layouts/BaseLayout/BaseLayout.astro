@@ -1,0 +1,42 @@
+---
+import '../../styles/global.css';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
+import type { BaseLayoutProps } from './BaseLayout.types';
+
+type Props = BaseLayoutProps;
+
+const {
+  title,
+  description = 'Northern Kings GT - A Kings of War tournament celebrating the very best of the hobby',
+  image = '/nkgt2025-ograph.jpg',
+  compactHeader = false,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?react" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content="The Northern Kings GT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+    <meta property="og:description" content={description} />
+  </head>
+  <body>
+    <div class="l-layout">
+      <Header compact={compactHeader} />
+      <main class="l-main">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

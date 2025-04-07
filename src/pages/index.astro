@@ -1,0 +1,13 @@
+---
+import { TitleBanner } from '../components/TitleBanner';
+import { siteData } from '../data/site';
+import { BaseLayout } from '../layouts/BaseLayout';
+import { HomePage } from '../views/HomePage';
+
+const title = siteData.title;
+const description = siteData.description;
+---
+
+<BaseLayout title={title} description={description}>
+  <HomePage />
+</BaseLayout>

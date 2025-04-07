@@ -1,1 +1,2 @@
-export { default } from './Separator.vue';
+export { default as Separator } from './Separator';
+export type { SeparatorProps } from './Separator.types';

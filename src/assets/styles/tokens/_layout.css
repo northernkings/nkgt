@@ -2,6 +2,7 @@
   --scrollbar-width: 0%; /* requires unit definition here - dynamically set using Javascript helper */
   --fluid-min-width: 375px;
   --fluid-max-width: 1280px;
+  --fluid-max-width-slim: 700px;
   --fluid-screen: calc(100vw - var(--scrollbar-width));
 
   --grid-gap: var(--space-x-6);

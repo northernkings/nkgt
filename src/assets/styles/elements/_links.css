@@ -1,8 +1,14 @@
 /* Links */
 
+:root {
+  --color-action: var(--color-brand-mondo);
+  --color-action-underline-rgb: var(--color-brand-mondo-rgb);
+}
+
 a {
   color: var(--color-action);
   text-decoration: underline;
+  text-decoration-color: rgba(var(--color-action-underline-rgb), 0.3);
   cursor: pointer;
 
   &:hover,
@@ -10,7 +16,7 @@ a {
     text-decoration: none;
   }
 
-  &[href^="tel"] {
+  &[href^='tel'] {
     color: inherit;
     cursor: default;
     text-decoration: none;

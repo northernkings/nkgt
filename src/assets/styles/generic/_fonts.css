@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "RomanceFatal";
-  src: url("../../fonts/RomanceFatal.woff2") format("woff2"),
-    url("../../fonts/RomanceFatal.woff") format("woff");
+  font-family: 'RomanceFatal';
+  src: url('../../fonts/RomanceFatal.woff2') format('woff2'), url('../../fonts/RomanceFatal.woff')
+    format('woff');
   font-weight: normal;
   font-display: fallback;
 }
 
 @font-face {
-  font-family: "Marion";
-  src: url("../../fonts/Marion.woff2") format("woff2"),
-    url("../../fonts/Marion.woff") format("woff");
+  font-family: 'Marion';
+  src: url('../../fonts/Marion.woff2') format('woff2'), url('../../fonts/Marion.woff')
+    format('woff');
   font-weight: normal;
   font-display: fallback;
 }
 
 @font-face {
-  font-family: "Marion";
-  src: url("../../fonts/MarionBold.woff2") format("woff2"),
-    url("../../fonts/MarionBold.woff") format("woff");
+  font-family: 'Marion';
+  src: url('../../fonts/MarionBold.woff2') format('woff2'), url('../../fonts/MarionBold.woff')
+    format('woff');
   font-weight: bold;
   font-display: fallback;
 }

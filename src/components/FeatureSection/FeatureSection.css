@@ -1,4 +1,4 @@
-@import '~/assets/styles/resources.css';
+@import '../../assets/styles/resources.css';
 
 .c-feature-section {
   --feature-section-title-color: var(--color-brand-mondo);
@@ -88,7 +88,6 @@
   @media (--mq-lg) {
     width: calc(var(--fluid-screen) / 2);
     margin: 0;
-    background: yellow;
     position: relative;
     height: 100%;
   }

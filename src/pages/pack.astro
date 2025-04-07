@@ -1,0 +1,13 @@
+---
+import { siteData } from '../data/site';
+import { BaseLayout } from '../layouts/BaseLayout';
+import { PackPage } from '../views/PackPage';
+
+const title = `Tournament Pack - ${siteData.title}`;
+const description =
+  'The Northern Kings GT Tournament Pack, a collection of rules, scenarios, and scenarios for the Northern Kings GT';
+---
+
+<BaseLayout title={title} description={description} compactHeader={true}>
+  <PackPage />
+</BaseLayout>

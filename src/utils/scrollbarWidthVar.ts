@@ -1,9 +1,8 @@
-export const scrollbarWidthVar = function () {
+export const scrollbarWidthVar = () => {
   const styleNode = document.createElement('style');
 
   function setScrollbarWidth() {
-    const scrollbarWidth: string =
-      window.innerWidth - document.documentElement.clientWidth + 'px';
+    const scrollbarWidth: string = `${window.innerWidth - document.documentElement.clientWidth}px`;
     styleNode.textContent = /* css */ `
       :root {
         --scrollbar-width: ${scrollbarWidth}

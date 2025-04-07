@@ -1,4 +1,4 @@
-@import "~/assets/styles/resources.css";
+@import '../../assets/styles/resources.css';
 
 .c-editorial-section {
   padding-top: var(--space-y-7);
@@ -69,11 +69,6 @@
   @media (--mq-lg) {
     flex: 1;
   }
-}
-
-.c-editorial-section--reverse .c-editorial-section__content {
-  /* padding-left: 0;
-  padding-right: calc((100vw - var(--fluid-max-width)) / 2); */
 }
 
 .c-editorial-section__title {

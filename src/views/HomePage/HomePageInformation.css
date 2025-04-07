@@ -1,0 +1,4 @@
+.c-home-page-information {
+  --color-action: var(--color-neutral-white);
+  --color-action-underline-rgb: var(--color-neutral-white-rgb);
+}
