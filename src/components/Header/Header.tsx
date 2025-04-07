@@ -11,10 +11,14 @@ import GtLogo from '../../assets/images/nkgt-2025-logo.svg?react';
 export const Header: React.FC<HeaderProps> = ({ compact }) => {
   return (
     <header className={classNames('c-header', { 'c-header--compact': compact })}>
-      <div className="c-header__presents">
+      <div
+        className="c-header__presents"
+        aria-label="The Northern Kings Present"
+      >
         <span className="c-header__presents-label">The</span>
         <a href="https://thenorthernkings.com/">
           <NorthernKingsLogo className="c-header__presents-logo" />
+          <span className="u-sr-only">Northern Kings</span>
         </a>
         <span className="c-header__presents-label">Present</span>
       </div>
