@@ -255,17 +255,17 @@ export const PackPage = () => {
         </p>
         <h3>Printed Lists</h3>
         <p>
-          Lists must be printed out and brought to the event to supply to your opponent. It is
-          recommended that you print out multiple copies to have spare in case of any issues.
+          You must bring printed copies of your army list to the event for your opponent. We
+          recommend printing multiple copies as backups in case of any issues.
         </p>
         <p>
-          If you are using proxies, please ensure that your list utilies the unit description in the
-          Mantic Companion tool to highlight the proxy models so as to avoid any confusion (e.g.
-          "Butchers with Brew of Strength - Unit with wounded elf on the base").
+          If you're using proxy models, clearly identify them in your list using the Mantic
+          Companion's unit description field. For example: "Butchers with Brew of Strength - Unit
+          with wounded elf on the base."
         </p>
         <p>
-          Failure to supply your opponent with a printed list will result in a -10 Tournament Point
-          penalty to your overall score.
+          Players who fail to provide their opponent with a printed list will receive a -10
+          Tournament Point penalty to their overall score.
         </p>
 
         <h3>Tournament Re-Roll</h3>
