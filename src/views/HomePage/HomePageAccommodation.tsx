@@ -28,13 +28,13 @@ export const HomePageAccommodation: React.FC = () => {
     >
       <ul className="c-accommodation__list u-list-logos">
         <li>
-          <a href="https://www.ihg.com/holidayinn/hotels/gb/en/find-hotels/">
+          <a href="https://www.ihg.com/holidayinn/hotels/gb/en/wakefield/xwdwy/hoteldetail">
             <LogoHolidayInn className="c-accommodation__logo c-accommodation__logo--holiday-inn" />
             <span className="u-sr-only">Holiday Inn</span>
           </a>
         </li>
         <li>
-          <a href="https://www.wyndhamhotels.com/en-uk/ramada/yorkshire-united-kingdom/ramada-wakefield">
+          <a href="https://www.wyndhamhotels.com/en-uk/ramada/yorkshire-united-kingdom/ramada-wakefield/overview">
             <LogoRamada className="c-accommodation__logo c-accommodation__logo--ramada" />
             <span className="u-sr-only">Ramada</span>
           </a>
