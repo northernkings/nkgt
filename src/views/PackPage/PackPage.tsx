@@ -269,8 +269,8 @@ export const PackPage = () => {
           with wounded elf on the base."
         </p>
         <p>
-          Players who fail to provide their opponent with a printed list will receive a -10
-          Tournament Point penalty to their overall score.
+          Players who present their 3x printed lists at registration will receive a +10 Tournament
+          Point bonus to their overall score.
         </p>
 
         <h3>Tournament Re-Roll</h3>
@@ -328,6 +328,12 @@ export const PackPage = () => {
             <tr>
               <td>List Submission</td>
               <td className="b-table__cell--center">5</td>
+              <td className="b-table__cell--center">✓</td>
+              <td className="b-table__cell--center">✓</td>
+            </tr>
+            <tr>
+              <td>Printed Lists</td>
+              <td className="b-table__cell--center">10</td>
               <td className="b-table__cell--center">✓</td>
               <td className="b-table__cell--center">✓</td>
             </tr>
