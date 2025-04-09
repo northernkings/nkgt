@@ -255,7 +255,7 @@ export const PackPage = () => {
         </p>
         <p>Lists must be exported from the Mantic companion tool in PDF format.</p>
         <p>
-          All players who submit lists on time with receive a +5 Tournament Point bonus to their
+          All players who submit lists on time will receive a +5 tournament points bonus to their
           overall score.
         </p>
         <h3>Printed Lists</h3>
@@ -269,8 +269,9 @@ export const PackPage = () => {
           with wounded elf on the base."
         </p>
         <p>
-          Players who present their 3x printed lists at registration will receive a +10 Tournament
-          Point bonus to their overall score.
+          Players who present their 3x printed lists at registration will receive a +10 tournament
+          points bonus (NOTE: this is in addition to the +5 tournament points bonus for submitting
+          your list on time).
         </p>
 
         <h3>Tournament Re-Roll</h3>
@@ -360,8 +361,12 @@ export const PackPage = () => {
 
         <h3>List Submission Bonus</h3>
         <p>
-          Players who submit their list on time, as detailed on the previous page, will receive 5
+          Players who submit their list on time, as detailed on the previous page, will receive +5
           tournament points.
+        </p>
+        <p>
+          Additionally, players who present their 3x printed lists at registration will receive a
+          +10 tournament points bonus.
         </p>
 
         <h3>Painted Army</h3>
