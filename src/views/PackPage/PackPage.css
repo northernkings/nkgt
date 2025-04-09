@@ -18,7 +18,6 @@
     float: right;
     width: var(--nav-width);
     margin-right: calc(-1 * var(--nav-width) - var(--space-x-12));
-    /* margin-top: calc(-1 * var(--space-y-8)); */
   }
 }
 
@@ -69,7 +68,34 @@
   outline-offset: 2px;
 }
 
+.c-list-logos {
 
+  @media (--mq-md) {
+    display: flex;
+    gap: var(--space-x-5);
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 
+.c-list-logos li {
+  list-style: none;
+  text-align: center;
+  margin-block: var(--space-y-8);
 
+  @media (--mq-md) {
+    margin: 0;
+    flex: 1;
+    padding: 0;
+  }
+}
 
+.c-list-logos li::before {
+  display: none;
+}
+
+.c-list-logos li svg {
+  max-height: 80px;
+  max-width: 200px;
+}

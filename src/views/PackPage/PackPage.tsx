@@ -514,10 +514,10 @@ export const PackPage = () => {
           only a three to four minute drive from the venue.
         </p>
         <p>Below are links to a few suggestions:</p>
-        <ul className="c-accommodation__list u-list-logos">
+        <ul className="c-list-logos">
           <li>
             <a href="https://www.ihg.com/holidayinn/hotels/gb/en/find-hotels/select-roomrate?qDest=Queen%27s%20Dr,%20United%20Kingdom&qPt=CASH&qCiD=20&qCoD=21&qCiMy=42023&qCoMy=42023&qAdlt=1&qChld=0&qRms=1&qRtP=6CBARC&qAAR=6CBARC&qSlH=XWDWY&qAkamaiCC=GB&srb_u=1&qSrt=sDD&qBrs=re.ic.in.vn.cp.vx.hi.ex.rs.cv.sb.cw.ma.ul.ki.va.ii.sp.nd.sx.we.lx&qWch=0&qSmP=1&qRad=30&qRdU=mi&setPMCookies=false&qpMn=0&qLoSe=false">
-              <div className="c-accommodation__logo c-accommodation__logo--holiday-inn">
+              <div>
                 <LogoHolidayInn />
                 <span className="u-sr-only">Holiday Inn</span>
               </div>
@@ -525,7 +525,7 @@ export const PackPage = () => {
           </li>
           <li>
             <a href="https://www.wyndhamhotels.com/en-uk/ramada/yorkshire-united-kingdom/ramada-wakefield/rooms-rates?brand_id=RA&checkInDate=5/20/2023&checkOutDate=5/21/2023&useWRPoints=false&children=0&adults=1&rooms=1&loc=ChIJ6XnyiLU1eUgRYIVRMAP6oMs&sessionId=1639404597">
-              <div className="c-accommodation__logo c-accommodation__logo--ramada">
+              <div>
                 <LogoRamada />
                 <span className="u-sr-only">Ramada</span>
               </div>
@@ -533,7 +533,7 @@ export const PackPage = () => {
           </li>
           <li>
             <a href="https://mews-hotel.co.uk/">
-              <div className="c-accommodation__logo c-accommodation__logo--mews">
+              <div>
                 <LogoMews />
                 <span className="u-sr-only">The Mews Hotel</span>
               </div>
