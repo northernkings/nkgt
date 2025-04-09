@@ -78,7 +78,7 @@ export const PackPage = () => {
         <p>
           We rotate TO's for each event so our team members get a chance to play if they wish. If a
           member is playing, they are fully paid up and, as such, they're treated as a player and
-          not a TO on the day (No bias… in fact, we'll usually be biased against them!).
+          not a TO on the day (No bias... in fact, we'll usually be biased against them!).
         </p>
         <p>
           The TO's will make a call on any rules or situations that two players are unable to
