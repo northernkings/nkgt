@@ -258,6 +258,7 @@ export const PackPage = () => {
           All players who submit lists on time will receive a +5 tournament points bonus to their
           overall score.
         </p>
+
         <h3>Printed Lists</h3>
         <p>
           You <strong>MUST</strong> bring printed copies of your army list to the event for your
@@ -280,6 +281,23 @@ export const PackPage = () => {
           a roll-off and it cannot be for a turn 7. This re-roll ignores, and is ignored by, the
           "Can't re-roll a re-roll rule."
         </p>
+
+        <h3>Prize Donation</h3>
+        <p>
+          As we like to try make sure everyone leaves with a prize, we'll be running a raffle at the
+          end of the event.
+        </p>
+        <p>
+          To gain an additional +5 tournament points, each player can bring a prize donation with
+          them to the event. It should be gaming related, but there in no minimum value (just think
+          of something you might like to win). Think of it as a chance to rid yourself of some of
+          that pile of plastic shame you've been hoarding.
+        </p>
+        <p>
+          This is not compulsory, it only applies to the overall tournament score (not your
+          KoWMasters score), but it's a fun way to try make sure everyone leaves with a prize (and
+          for you to bump your overall score up a bit).
+        </p>
       </section>
 
       <Separator />
@@ -301,7 +319,6 @@ export const PackPage = () => {
           Scores submitted to KoWMasters rankings and for the Best General award will not include
           the hobby points.
         </p>
-
         <p>
           The breakdown of TPs available for the Tournament Score (used for KoWMasters rankings and
           Best General) and Overall Score (used for our top 3 overall awards) are as follows:
@@ -350,6 +367,12 @@ export const PackPage = () => {
               <td className="b-table__cell--center" />
               <td className="b-table__cell--center">✓</td>
             </tr>
+            <tr>
+              <td>Prize Donation</td>
+              <td className="b-table__cell--center">5</td>
+              <td className="b-table__cell--center" />
+              <td className="b-table__cell--center">✓</td>
+            </tr>
           </tbody>
         </table>
 
@@ -357,16 +380,6 @@ export const PackPage = () => {
         <p>
           Players will earn up to 25 tournament points and 2300 kill points per game. We'll be using
           the Northern Kings scoring system, as detailed in Appendix I.
-        </p>
-
-        <h3>List Submission Bonus</h3>
-        <p>
-          Players who submit their list on time, as detailed on the previous page, will receive +5
-          tournament points.
-        </p>
-        <p>
-          Additionally, players who present their 3x printed lists at registration will receive a
-          +10 tournament points bonus.
         </p>
 
         <h3>Painted Army</h3>
@@ -413,6 +426,21 @@ export const PackPage = () => {
           points.
         </p>
         <p>Please see Appendix III for the full details.</p>
+
+        <h3>Bonuses</h3>
+        <p>There are a number of bonuses available to players:</p>
+        <p>
+          Players who submit their list on time, as detailed on the previous page, will receive +5
+          tournament points (applied to both the tournament and overall scores).
+        </p>
+        <p>
+          Additionally, players who present their 3x printed lists at registration will receive a
+          +10 tournament points bonus (applied to both the tournament and overall scores).
+        </p>
+        <p>
+          Players who bring a prize donation to the event will receive an additional +5 tournament
+          points (applied to the overall score only).
+        </p>
       </section>
 
       <Separator />
@@ -713,7 +741,7 @@ export const PackPage = () => {
         </p>
         <p>The average of the Judges scores for a given army will be added as Hobby Points.</p>
 
-        <p>Some examples of what we'll look for are:</p>
+        <p>Some examples of what we'll look for, but not limited to, are:</p>
         <ul>
           <li>Use an effective and visually appealing colour scheme.</li>
           <li>Consistently neat painting.</li>
