@@ -13,7 +13,7 @@ export const PackPage = () => {
       titleAs="h1"
     >
       <p>
-        <strong>Updated: 7th April 2025</strong>
+        <strong>Updated: 9th April 2025</strong>
       </p>
 
       <nav
