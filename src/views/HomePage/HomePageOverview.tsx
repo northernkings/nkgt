@@ -1,6 +1,7 @@
 import type React from 'react';
 import { Button } from '../../components/Button';
 import { EditorialSection } from '../../components/EditorialSection';
+import { config } from '../../config';
 
 export const HomePageOverview: React.FC = () => {
   const media = (
@@ -51,13 +52,21 @@ export const HomePageOverview: React.FC = () => {
         priced at <strong>&pound;60.00</strong>, include a proper lunch on both days and a planned
         evening social.
       </p>
-      <Button
-        href="/register"
-        variants={['lg:lg', 'decorative', 'invert']}
-      >
-        Register Now
-      </Button>
-      {/* <Button disabled variants={['lg:lg', 'decorative', 'invert']}>Sold Out</Button> */}
+      {config.soldOut ? (
+        <Button
+          disabled
+          variants={['lg:lg', 'decorative', 'invert']}
+        >
+          Sold Out
+        </Button>
+      ) : (
+        <Button
+          href="/register"
+          variants={['lg:lg', 'decorative', 'invert']}
+        >
+          Register Now
+        </Button>
+      )}
     </EditorialSection>
   );
 };

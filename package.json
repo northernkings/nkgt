@@ -5,11 +5,11 @@
   "license": "UNLICENSED",
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
+    "dev": "dotenvx run -- astro dev",
+    "start": "dotenvx run -- astro dev",
+    "build": "dotenvx run -- astro build",
+    "preview": "dotenvx run -- astro preview",
+    "astro": "dotenvx run -- astro",
     "format": "biome format --write ./src",
     "check": "biome check ./src",
     "check:fix": "biome check --write ./src",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@astrojs/check": "0.9.4",
+    "@dotenvx/dotenvx": "1.39.1",
     "classnames": "2.5.1",
     "focus-visible": "5.2.1",
     "modern-normalize": "3.0.1",
@@ -46,7 +47,7 @@
     "tsx": "4.19.3",
     "typescript": "5.8.3",
     "vite": "6.2.5",
-    "vite-plugin-svgr": "^4.3.0",
+    "vite-plugin-svgr": "4.3.0",
     "vite-svg-loader": "5.1.0"
   },
   "packageManager": "pnpm@10.8.0"

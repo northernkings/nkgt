@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import type React from 'react';
+import { config } from '../../config';
 import { Button } from '../Button';
 import type { HeaderProps } from './Header.types';
 import './Header.css';
@@ -41,21 +42,31 @@ export const Header: React.FC<HeaderProps> = ({ compact }) => {
                 June 21<sup>st</sup> and 22<sup>nd</sup>
               </span>
             </p>
-            {/* <p className="c-header__strapline u-text-uppercase">Sorry, the event has now sold out</p> */}
+            {config.soldOut && (
+              <p className="c-header__strapline u-text-uppercase">
+                Sorry, the event has now sold out
+              </p>
+            )}
           </>
         )}
       </div>
       <div className="c-header__book-now">
-        <Button
-          className="c-header__book-now__action"
-          href="/register"
-          variants={['sm', 'lg:lg', 'decorative', 'ghost', 'invert']}
-        >
-          Register Now
-        </Button>
-        {/* <Button disabled variants={['sm', 'lg:lg', 'decorative', 'ghost', 'invert']}>
-          Sold Out
-        </Button> */}
+        {config.soldOut ? (
+          <Button
+            disabled
+            variants={['sm', 'lg:lg', 'decorative', 'ghost', 'invert']}
+          >
+            Sold Out
+          </Button>
+        ) : (
+          <Button
+            className="c-header__book-now__action"
+            href="/register"
+            variants={['sm', 'lg:lg', 'decorative', 'ghost', 'invert']}
+          >
+            Register Now
+          </Button>
+        )}
       </div>
     </header>
   );
