@@ -2,10 +2,24 @@
 
 /* Page Navigation Styles */
 .c-page-nav {
+  --nav-width: 225px;
+
   margin: var(--space-y-4) 0 var(--space-y-8);
   padding: var(--space-y-3) ;
   background-color: rgba(var(--color-brand-mondo-rgb), 0.05);
   border-left: 4px solid var(--color-brand-mondo);
+
+  /* Sticky navigation for large screens */
+  @media (--mq-xl) {
+    position: sticky;
+    top: var(--space-y-8);
+    max-height: calc(100vh - var(--space-y-8));
+    overflow-y: auto;
+    float: right;
+    width: var(--nav-width);
+    margin-right: calc(-1 * var(--nav-width) - var(--space-x-12));
+    /* margin-top: calc(-1 * var(--space-y-8)); */
+  }
 }
 
 .c-page-nav ul {
@@ -54,6 +68,8 @@
   outline: 2px solid var(--color-accessible-focus);
   outline-offset: 2px;
 }
+
+
 
 
 
