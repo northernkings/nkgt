@@ -260,8 +260,8 @@ export const PackPage = () => {
         </p>
         <h3>Printed Lists</h3>
         <p>
-          You must bring printed copies of your army list to the event for your opponent. We
-          recommend printing multiple copies as backups in case of any issues.
+          You <strong>MUST</strong> bring printed copies of your army list to the event for your
+          opponent. We recommend printing multiple copies as backups in case of any issues.
         </p>
         <p>
           If you're using proxy models, clearly identify them in your list using the Mantic
