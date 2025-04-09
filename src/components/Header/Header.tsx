@@ -27,6 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ compact }) => {
           <div className="c-header__logo c-header__logo--compact">
             <a href="/">
               <GtLogo className="c-header__logo__image" />
+              <span className="u-sr-only">Northern Kings Grand Tournament</span>
             </a>
           </div>
         ) : (
