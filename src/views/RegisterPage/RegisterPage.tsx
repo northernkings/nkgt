@@ -22,6 +22,31 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ step = 1 }) => {
     }));
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Store form data in localStorage to persist it between steps
+    localStorage.setItem('registrationData', JSON.stringify(formData));
+
+    // Submit to Netlify Forms
+    try {
+      const form = e.target as HTMLFormElement;
+      const formData = new FormData(form);
+
+      await fetch('/', {
+        method: 'POST',
+        body: formData,
+      });
+
+      // Navigate to step 2 after successful form submission
+      window.location.href = '/register-step-2/';
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Still navigate to step 2 even if form submission fails
+      window.location.href = '/register-step-2/';
+    }
+  };
+
   return (
     <>
       {step === 1 && (
@@ -41,9 +66,10 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ step = 1 }) => {
           </p>
           <Separator compact={true} />
           <form
-            action="/register-step-2/"
+            onSubmit={handleSubmit}
             name="nkgtRegistration2025"
             method="POST"
+            data-netlify="true"
             className="c-form"
           >
             <div className="u-hidden">
