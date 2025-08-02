@@ -7,9 +7,9 @@ import './Header.css';
 
 // Import SVG components
 import NorthernKingsLogo from '../../assets/images/nk-logo-vertical.svg?react';
-import GtLogo from '../../assets/images/nkgt-2025-logo.svg?react';
+import GtLogo from '../../assets/images/nkgt-generic-logo.svg?react';
 
-export const Header: React.FC<HeaderProps> = ({ compact }) => {
+export const Header: React.FC<HeaderProps> = ({ compact, bookNow }) => {
   return (
     <header className={classNames('c-header', { 'c-header--compact': compact })}>
       <div
@@ -50,24 +50,26 @@ export const Header: React.FC<HeaderProps> = ({ compact }) => {
           </>
         )}
       </div>
-      <div className="c-header__book-now">
-        {config.soldOut ? (
-          <Button
-            disabled
-            variants={['sm', 'lg:lg', 'decorative', 'ghost', 'invert']}
-          >
-            Sold Out
-          </Button>
-        ) : (
-          <Button
-            className="c-header__book-now__action"
-            href="/register"
-            variants={['sm', 'lg:lg', 'decorative', 'ghost', 'invert']}
-          >
-            Register Now
-          </Button>
-        )}
-      </div>
+      {bookNow && (
+        <div className="c-header__book-now">
+          {config.soldOut ? (
+            <Button
+              disabled
+              variants={['sm', 'lg:lg', 'decorative', 'ghost', 'invert']}
+            >
+              Sold Out
+            </Button>
+          ) : (
+            <Button
+              className="c-header__book-now__action"
+              href="/register"
+              variants={['sm', 'lg:lg', 'decorative', 'ghost', 'invert']}
+            >
+              Register Now
+            </Button>
+          )}
+        </div>
+      )}
     </header>
   );
 };

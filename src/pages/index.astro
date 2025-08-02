@@ -1,13 +1,46 @@
 ---
-import { TitleBanner } from '../components/TitleBanner';
+import { EditorialSection } from '../components/EditorialSection';
+import { Separator } from '../components/Separator';
 import { siteData } from '../data/site';
 import { BaseLayout } from '../layouts/BaseLayout';
-import { HomePage } from '../views/HomePage';
 
 const title = siteData.title;
 const description = siteData.description;
 ---
 
-<BaseLayout title={title} description={description}>
-  <HomePage />
+<BaseLayout title={title} description={description} bookNow={false} compactHeader={true}>
+  <main class="u-container">
+    <EditorialSection variants={['single']} title="Goodbye (for now)">
+      <p class="u-text-4">Right then, it's been a proper good run.</p>
+      <p>
+        We've had some cracking tournaments and made some proper good memories together (and some
+        cloudy drunken memories too).
+      </p>
+      <p>
+        From that first tournament we put on to the last one, we've been lucky enough to see players
+        from all over the world turn up, have some belting games, and make mates for life.
+      </p>
+      <p>
+        We've watched armies smash into each other across some lovely tables, seen some proper
+        tactical genius (and the odd disaster!), and celebrated everything that makes this hobby
+        brilliant. Every tournament's brought new stories, new winners, and new memories we'll not
+        forget in a hurry.
+      </p>
+      <p>
+        We're having a bit of a break for now, but the Northern Kings spirit's still out there in
+        every game played, every army painted, and every tournament our amazing community puts on.
+        Kings of War's only getting bigger, and we're chuffed to have been part of it.
+      </p>
+      <p>
+        To everyone who's played, sponsored us, helped out, or just turned up to watch - you've made
+        Northern Kings what it was. You've shown that the best bit of this hobby isn't just the
+        games, it's the folk you meet along the way.
+      </p>
+      <p>
+        Keep rolling them dice, keep painting them miniatures, and keep the Kings of War spirit
+        going. We'll see you on the battlefield again one day.
+      </p>
+      <Separator />
+    </EditorialSection>
+  </main>
 </BaseLayout>

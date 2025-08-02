@@ -3,4 +3,5 @@ export interface BaseLayoutProps {
   description?: string;
   image?: string;
   compactHeader?: boolean;
+  bookNow?: boolean;
 }
